@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledContainer } from "./styled";
 
-const Container = ({ body }) => {
-  return <StyledContainer>{body}</StyledContainer>;
+const Container = (props ) => {
+  return <StyledContainer>{props.children}</StyledContainer>;
 };
 export default Container;

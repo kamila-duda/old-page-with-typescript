@@ -3,9 +3,12 @@ import styled from "styled-components";
 export const StyledText = styled.p`
   position: relative;
   font-size: 20px;
+  font-weight: bold;
   line-height: 1.6;
   height: 400px;
   width: 100%;
+  margin-top: 20px;
+  text-align: justify;
   &::after{
     content:"_";
     position: absolute;

@@ -3,9 +3,8 @@ import styled, { css } from "styled-components";
 export const StyledHomePage = styled.div`
   height: 100vh;
   width: 100%;
-  border: 2px solid ${({ theme }) => theme.color.primaryColor};
 `;
-export const StyledText = styled.p`
+export const StyledText = styled.h1`
   color: ${({ theme }) => theme.color.fontColor};
   font-size: 60px;
   font-weight: bold;

@@ -12,7 +12,6 @@ const AboutPage = () => {
   const componentRef = useRef(null);
 
   const onScrollPage = () => {
-    console.log(componentRef.current.pageYOffset)
     if ((window.pageYOffset) > (componentRef.current.offsetTop-400)) {
       setIsScrolling(true)
     } else { setIsScrolling(false) }
@@ -26,7 +25,7 @@ const AboutPage = () => {
         setCount(count => count+1);
         setTextTyping(textTyping=>textTyping+textToShow.charAt(count))
       }
-    }, 50);
+    }, 5);
 
     return () => {
       clearInterval(timeoutId);
@@ -35,14 +34,12 @@ const AboutPage = () => {
   }, [count, isScrolling]);
  
   return (
-    <Container
-      body={
-        <>
+    <Container>
+      <IconsContainer />
           <StyledText ref={componentRef}>{textTyping}</StyledText>
-          <IconsContainer />
-        </>
-      }
-    />
+          
+
+          </Container>
   );
 };
 

@@ -10,9 +10,7 @@ import Container from "../common/Container";
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <Container
-        body={
-          <>
+      <Container>
             <div>
               <StyledText colored>
               &#10095;Hello, world!
@@ -22,9 +20,7 @@ const HomePage = () => {
               <StyledText>Web Developer</StyledText>
             </div>
             <StyledImage src={profile} />
-          </>
-        }
-      />
+            </Container>
     </StyledHomePage>
   );
 };

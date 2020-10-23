@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
 import HomePage from "./components/HomePage";
@@ -7,7 +7,7 @@ import { theme } from "./theme";
 import AboutPage from "./components/AboutPage";
 import Main from "./components/common/Main";
 import ProjectsPage from "./components/ProjectsPage";
-
+import ProjectsPageNext from "./components/ProjectsPageNext";
 
 function App() {
 
