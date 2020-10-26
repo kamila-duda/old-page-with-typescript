@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import Navigation from "./components/Navigation";
-import HomePage from "./components/HomePage";
+import Navigation from "./components/features/Navigation";
+import HomePage from "./components/features/HomePage";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
-import AboutPage from "./components/AboutPage";
+import AboutPage from "./components/features/AboutPage";
 import Main from "./components/common/Main";
-import ProjectsPage from "./components/ProjectsPage";
-import ProjectsPageNext from "./components/ProjectsPageNext";
+import ProjectsPage from "./components/features/ProjectsPage";
 
 function App() {
 

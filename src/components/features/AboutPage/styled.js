@@ -5,7 +5,7 @@ export const StyledText = styled.p`
   font-size: 20px;
   font-weight: bold;
   line-height: 1.6;
-  height: 400px;
+  min-height: 400px;
   width: 100%;
   margin-top: 20px;
   text-align: justify;
@@ -18,5 +18,9 @@ export const StyledText = styled.p`
   @keyframes pulse {
     0%{opacity:1}
     50%{opacity:0}
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 16px;
+    font-weight: normal;
   }
 `;

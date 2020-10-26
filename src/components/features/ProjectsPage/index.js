@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import ReactCardCarousel from "react-card-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faSearch } from "@fortawesome/free-solid-svg-icons";
-import Container from "../common/Container";
+import Container from "../../common/Container";
 import {
   StyledImage,
   StyledDetailsContainer,

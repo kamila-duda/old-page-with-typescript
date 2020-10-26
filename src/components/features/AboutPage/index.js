@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Container from "../common/Container";
+import Container from "../../common/Container";
 import IconsContainer from "../AboutPage/IconsContainer";
 import { StyledText } from "./styled";
 
