@@ -36,10 +36,10 @@ const ProjectsPage = () => {
                 <StyledCard key={item.link}>
                   <StyledImage src={item.image} alt="" />
                   <StyledDetailsContainer>
-                    <StyledLink href={item.code}>
+                    <StyledLink href={item.code} target="_blank">
                       <FontAwesomeIcon icon={faCode} />
                     </StyledLink>
-                    <StyledLink href={item.link}>
+                    <StyledLink href={item.link} target="_blank">
                       <FontAwesomeIcon icon={faSearch} />
                     </StyledLink>
                   </StyledDetailsContainer>
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
       ))}
       <StyledLine>
         For more projects, please visit my github page:{" "}
-        <StyledGithubLink href="https://github.com/kamila-duda" github>
+        <StyledGithubLink href="https://github.com/kamila-duda" target="_blank" github>
           "https://github.com/kamila-duda"
         </StyledGithubLink>
       </StyledLine>
