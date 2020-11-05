@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const StyledSubtitle = styled.h2`
   width: 100%;
+  text-transform: uppercase;
 `;
 export const StyledWrapperIcons = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 20px;
 `;
 export const StyledIcon = styled.img`
   width: 60px;

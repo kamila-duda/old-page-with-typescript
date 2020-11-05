@@ -29,6 +29,10 @@ export const StyledText = styled.p`
     font-weight: normal;
   }
 `;
+export const StyledContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 50px;
   transition: transform 2s ease-out;
@@ -37,8 +41,14 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 export const StyledLink = styled.a`
   font-size: 23px;
   margin: 5px 15px;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: ${({ theme }) => theme.color.primaryColor};
+  border: 2px solid ${({ theme }) => theme.color.primaryColor};
+  border-radius: 15px;
   &:hover {
     color: ${({ theme }) => theme.color.lightPrimaryColor};
     ${StyledFontAwesomeIcon} {

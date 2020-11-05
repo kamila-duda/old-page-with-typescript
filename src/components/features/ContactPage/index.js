@@ -1,19 +1,28 @@
 import React from "react";
 import Container from "../../common/Container";
-import { StyledSubtitle, StyledLine, StyledLink, StyledFontAwesomeIcon } from "./styled";
+import {
+  StyledSubtitle,
+  StyledLine,
+  StyledContainer,
+  StyledLink,
+  StyledFontAwesomeIcon,
+} from "./styled";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 const ContactPage = () => {
- 
   return (
     <Container>
       <StyledSubtitle>Contact</StyledSubtitle>
       <StyledLine>You can contact with me by:</StyledLine>
-      <div>
-         <StyledLink href="mailto: k.duda@mailplus.pl"><StyledFontAwesomeIcon icon={faEnvelopeSquare}/></StyledLink>
-         <StyledLink href="https://github.com/kamila-duda" target="_blank"><StyledFontAwesomeIcon icon={faGithubSquare}/></StyledLink>
-      </div>
+      <StyledContainer>
+        <StyledLink href="mailto: k.duda@mailplus.pl">
+          <StyledFontAwesomeIcon icon={faEnvelopeSquare} />
+        </StyledLink>
+        <StyledLink href="https://github.com/kamila-duda" target="_blank">
+          <StyledFontAwesomeIcon icon={faGithubSquare} />
+        </StyledLink>
+      </StyledContainer>
     </Container>
   );
 };

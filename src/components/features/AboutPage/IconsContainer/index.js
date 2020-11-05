@@ -14,7 +14,6 @@ import git from "../../../../images/git.svg";
 import npm from "../../../../images/npm.svg";
 import { StyledIcon, StyledSubtitle, StyledWrapperIcons } from "./styled";
 
-
 const IconsContainer = () => {
   const icons = [
     html,
@@ -31,16 +30,15 @@ const IconsContainer = () => {
     git,
     npm,
   ];
-  
+
   return (
     <>
-      <StyledSubtitle >Skills:</StyledSubtitle>
+      <StyledSubtitle>Skills</StyledSubtitle>
       <StyledWrapperIcons>
         {icons.map((icon) => (
           <StyledIcon src={icon} key={icon} />
         ))}
       </StyledWrapperIcons>
-     
     </>
   );
 };

@@ -36,8 +36,23 @@ export const StyledNavLink = styled.a`
   text-decoration: none;
   text-transform: capitalize;
   color: ${({ theme }) => theme.color.primaryColor};
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 15%;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 1s ease-in-out;
+    background-color: ${({ theme }) => theme.color.primaryColor};
+  }
   &:hover {
-    border-bottom: 2px solid ${({ theme }) => theme.color.primaryColor};
+    &::after {
+      transform: scaleX(1);
+    }
   }
 `;
 export const StyledIcon = styled.div`

@@ -1,7 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../common/Container";
 import IconsContainer from "../AboutPage/IconsContainer";
-import { StyledText, StyledLink, StyledFontAwesomeIcon } from "./styled";
+import {
+  StyledText,
+  StyledContainer,
+  StyledLink,
+  StyledFontAwesomeIcon,
+} from "./styled";
 import CV from "./../../../files/CVKamilaDuda.pdf";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
@@ -41,11 +46,14 @@ const AboutPage = () => {
     <Container>
       <IconsContainer />
       <StyledText ref={componentRef}>{textTyping}</StyledText>
-      <StyledLink href={CV} download>
-        <p>
+      <StyledContainer>
+        <StyledLink href={CV} download>
           Download my CV <StyledFontAwesomeIcon icon={faFilePdf} />
-        </p>
-      </StyledLink>
+        </StyledLink>
+        <StyledLink href={CV} download>
+          Pobierz moje CV <StyledFontAwesomeIcon icon={faFilePdf} />
+        </StyledLink>
+      </StyledContainer>
     </Container>
   );
 };
