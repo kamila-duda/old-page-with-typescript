@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73e745529bb78970145f0c8252237ea0",
+    "revision": "08390ad9aac34c36b9099890432f8e5e",
     "url": "/index.html"
   },
   {
-    "revision": "5f91b8f23bfbc750e2e1",
-    "url": "/static/css/main.0e96c88f.chunk.css"
+    "revision": "7b4a759ce660a1e41963",
+    "url": "/static/css/main.69eda509.chunk.css"
   },
   {
-    "revision": "288b94771396c96e56f8",
-    "url": "/static/js/2.826f0d79.chunk.js"
+    "revision": "b7f3368e8df6818e7a5b",
+    "url": "/static/js/2.843efe67.chunk.js"
   },
   {
     "revision": "a3c66bc87fa121efed0250fdac2dfa2b",
-    "url": "/static/js/2.826f0d79.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.843efe67.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f91b8f23bfbc750e2e1",
-    "url": "/static/js/main.7ab64daa.chunk.js"
+    "revision": "7b4a759ce660a1e41963",
+    "url": "/static/js/main.db668a54.chunk.js"
   },
   {
     "revision": "9212cdf8da1296d1f5bf",
     "url": "/static/js/runtime-main.1d7d1311.js"
   },
   {
+    "revision": "35d3eda6c341be6a16ed44d1e601036c",
+    "url": "/static/media/CVKamilaDuda.35d3eda6.pdf"
+  },
+  {
     "revision": "d3f1e4320969b8acc3bd62a077b5911f",
     "url": "/static/media/ang.d3f1e432.png"
+  },
+  {
+    "revision": "d566e3bd723c2a7f7c4520cba4d304cb",
+    "url": "/static/media/art.d566e3bd.png"
   },
   {
     "revision": "64fb7eb24c8febf235d1a1f5b9c92a63",
@@ -38,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "deb69b7a3084688a86ff04d8ed2537f6",
     "url": "/static/media/budo.deb69b7a.PNG"
-  },
-  {
-    "revision": "45340ae02eee56f142ca358a20d842f9",
-    "url": "/static/media/calculator.45340ae0.png"
   },
   {
     "revision": "ce5e2139e71c80eca60f874f3b2eab82",
@@ -58,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f3f4f15d89adeb50dac4487a1a9e4b18",
     "url": "/static/media/git.f3f4f15d.svg"
+  },
+  {
+    "revision": "9ca663bf547d0a867757e24ff6c479cc",
+    "url": "/static/media/hairdresser.9ca663bf.PNG"
   },
   {
     "revision": "15a5a8bda0c1e730557fa45b6a2a941c",
