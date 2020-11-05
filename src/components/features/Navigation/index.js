@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   StyledNav,
   StyledNavList,
@@ -9,37 +9,38 @@ import {
 } from "./styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { useScrollSections } from "react-scroll-section";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  //const navRef = useRef();
-  const toggleMenu = () => {
-      setIsOpen(!isOpen);
-  };
+
+  const sections = useScrollSections();
   return (
     <StyledNav>
       <StyledNavList>
-        <StyledNavItem>
-          <StyledNavLink href="#about">&#60;About/&#62;</StyledNavLink>
-        </StyledNavItem>
-        <StyledNavItem>
-          <StyledNavLink href="#education">&#60;Projects/&#62;</StyledNavLink>
-        </StyledNavItem>
-        <StyledNavItem>
-          <StyledNavLink href="#experience">&#60;Contact/&#62;</StyledNavLink>
-        </StyledNavItem>
+        {sections.map(({ id, onClick, selected }) => (
+          <StyledNavItem key={id}>
+            <StyledNavLink onClick={onClick} selected={selected}>
+              &#60;{id}/&#62;
+            </StyledNavLink>
+          </StyledNavItem>
+        ))}
       </StyledNavList>
       <StyledNavListMobile open={isOpen}>
-      <StyledNavItem>
-          <StyledNavLink href="#about">&#60;About/&#62;</StyledNavLink>
-        </StyledNavItem>
-        <StyledNavItem>
-          <StyledNavLink href="#education">&#60;Projects/&#62;</StyledNavLink>
-        </StyledNavItem>
-        <StyledNavItem>
-          <StyledNavLink href="#experience">&#60;Contact/&#62;</StyledNavLink>
-        </StyledNavItem>
-        <StyledIcon onClick={()=>toggleMenu()}>
+        {sections.map(({ id, onClick, selected }) => (
+          <StyledNavItem key={id}>
+            <StyledNavLink
+              onClick={() => {
+                onClick();
+                setIsOpen(!isOpen);
+              }}
+              selected={selected}
+            >
+              &#60;{id}/&#62;
+            </StyledNavLink>
+          </StyledNavItem>
+        ))}
+        <StyledIcon onClick={() => setIsOpen(!isOpen)}>
           <FontAwesomeIcon icon={faCode} />
         </StyledIcon>
       </StyledNavListMobile>

@@ -10,9 +10,11 @@ import {
   StyledSubtitle,
   StyledArticle,
   StyledLink,
+  StyledGithubLink,
   StyledTextContainer,
   StyledImagesContainer,
   StyledCard,
+  StyledLine,
 } from "./styled";
 import { projects } from "./projects";
 
@@ -21,15 +23,17 @@ const ProjectsPage = () => {
     <Container>
       <StyledSubtitle>My projects:</StyledSubtitle>
       {projects.map((category) => (
-        <StyledArticle>
+        <StyledArticle key={category.title}>
           <StyledTextContainer>
-            <h3>{category.title}</h3>
-            <p>Bla</p>
+            <h3>
+              {category.title} ({category.items.length}):
+            </h3>
+            <p>{category.description}</p>
           </StyledTextContainer>
           <StyledImagesContainer>
             <ReactCardCarousel>
               {category.items.map((item) => (
-                <StyledCard>
+                <StyledCard key={item.link}>
                   <StyledImage src={item.image} alt="" />
                   <StyledDetailsContainer>
                     <StyledLink href={item.code}>
@@ -41,9 +45,7 @@ const ProjectsPage = () => {
                   </StyledDetailsContainer>
                   <StyledDetailsContainer>
                     {item.tags.map((tag) => (
-                      <>
-                        <StyledDetail>{tag}</StyledDetail>
-                      </>
+                      <StyledDetail key={tag}>{tag}</StyledDetail>
                     ))}
                   </StyledDetailsContainer>
                 </StyledCard>
@@ -52,6 +54,12 @@ const ProjectsPage = () => {
           </StyledImagesContainer>
         </StyledArticle>
       ))}
+      <StyledLine>
+        For more projects, please visit my github page:{" "}
+        <StyledGithubLink href="https://github.com/kamila-duda" github>
+          "https://github.com/kamila-duda"
+        </StyledGithubLink>
+      </StyledLine>
     </Container>
   );
 };

@@ -5,15 +5,18 @@ import diet from "./../../../images/diet.png";
 import lansoft from "./../../../images/lansoft.png";
 import letters from "./../../../images/letterts.png";
 import money from "./../../../images/money.png";
-import calculator from "./../../../images/calculator.png";
 import todo from "./../../../images/todo.png";
 import kissi from "./../../../images/kissi.PNG";
 import budo from "./../../../images/budo.PNG";
 import movies from "./../../../images/movies.PNG";
+import art from "./../../../images/art.png";
+import hair from "./../../../images/hairdresser.PNG";
+
 
 export const projects = [
   {
     title: "Web applications",
+    description: "This category includes web applications using the React.js, Redux and Saga technologies. The Movie Browser project was made by a team of three. Movies Browser and Currency converter applications use API, ToDo List and Movies Browser allow to save data in Local Storage.",
     items: [
       {
         image: movies,
@@ -37,6 +40,7 @@ export const projects = [
   },
   {
     title: "Games",
+    description: "The Piggy Bank was created to teach children to count money, and the Letter game is intended to introduce people to the layout of the letters on the keyboard. The quiz allows to test knowledge of English.",
     items: [
       {
         image: money,
@@ -60,6 +64,7 @@ export const projects = [
   },
   {
     title: "Websites",
+    description: "I made a diet recipe page where you can create your own shopping list and save it to Local Storage. Simple site about astronomy with a quiz, and also sample websites for companies and individuals.",
     items: [
       {
         image: diet,
@@ -69,8 +74,8 @@ export const projects = [
       },
       {
         image: astronomy,
-        code: "https://github.com/kamila-duda/astronomy",
-        link: "https://kamila-duda.github.io/astronomy/",
+        code: "https://github.com/kamila-duda/astronomia",
+        link: "https://kamila-duda.github.io/astronomia/",
         tags: ["HTML", "CSS", "JavaScript"],
       },
       {
@@ -89,22 +94,16 @@ export const projects = [
         link: "http://kd2020-pl.stackstaging.com/",
         tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       },
-    ],
-  },
-  {
-    title: "Other",
-    items: [
-      // {
-      //  image: wordpress,
-      //   link: "https://nawrot.000webhostapp.com/",
-      //   tags: ["Wordpress"]
-
-      // },
       {
-        image: calculator,
-        code: "https://github.com/kamila-duda/calculator",
-        link: "https://kamila-duda.github.io/calculator",
-        tags: ["HTML", "CSS", "JavaScript"],
+        image: hair,
+        code: "https://github.com/kamila-duda/hairdresser",
+        link: "https://kamila-duda.github.io/hairdresser/",
+        tags: ["HTML", "SCSS", "JavaScript"],
+      },
+      {
+        image: art,
+        link: "https://nawrot.000webhostapp.com/",
+        tags: ["Wordpress"],
       },
     ],
   },

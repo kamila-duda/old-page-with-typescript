@@ -32,7 +32,9 @@ export const StyledNavItem = styled.li`
   }
 `;
 export const StyledNavLink = styled.a`
+  cursor: pointer;
   text-decoration: none;
+  text-transform: capitalize;
   color: ${({ theme }) => theme.color.primaryColor};
   &:hover {
     border-bottom: 2px solid ${({ theme }) => theme.color.primaryColor};
@@ -44,7 +46,9 @@ export const StyledIcon = styled.div`
   top: 0px;
   right: 10px;
   font-size: 20px;
-  color: ${({theme})=>theme.color.primaryColor};
+  background-image: url(${tlo});
+  border-radius: 10px;
+  color: ${({ theme }) => theme.color.primaryColor};
 `;
 export const StyledNavListMobile = styled.ul`
   list-style-type: none;
@@ -53,7 +57,7 @@ export const StyledNavListMobile = styled.ul`
   align-items: center;
   padding: 0;
   width: 100%;
-  margin: -160px 0 0;
+  margin: -218px 0 0;
   ${({ open }) =>
     open &&
     css`
