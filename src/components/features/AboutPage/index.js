@@ -48,10 +48,10 @@ const AboutPage = () => {
       <StyledText ref={componentRef}>{textTyping}</StyledText>
       <StyledContainer>
         <StyledLink href={CV} download>
-          Download my CV <StyledFontAwesomeIcon icon={faFilePdf} />
+          Download CV <StyledFontAwesomeIcon icon={faFilePdf} />
         </StyledLink>
         <StyledLink href={CV} download>
-          Pobierz moje CV <StyledFontAwesomeIcon icon={faFilePdf} />
+          Pobierz CV <StyledFontAwesomeIcon icon={faFilePdf} />
         </StyledLink>
       </StyledContainer>
     </Container>

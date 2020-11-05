@@ -6,9 +6,13 @@ export const StyledFooter = styled.footer`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: ${({theme})=>theme.breakpoint.xs}){
+    justify-content: center;
+  }
 `;
 export const StyledText = styled.p`
-  max-width: 1320px;
+  padding: 5px 10px;
   font-size: 12px;
   margin: 0;
+  color: ${({ theme }) => theme.color.white};
 `;

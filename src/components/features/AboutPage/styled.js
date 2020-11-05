@@ -32,19 +32,28 @@ export const StyledText = styled.p`
 export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 50px;
   transition: transform 2s ease-out;
   margin-left: 15px;
+  @media (max-width: ${({theme})=>theme.breakpoint.s}){
+    animation: rotateMobile 4s infinite;
+  }
+  @keyframes rotateMobile{
+    25%{transform: rotate(25deg)};
+    75%{transform: rotate(-25deg)};
+  }
 `;
 export const StyledLink = styled.a`
   font-size: 23px;
   margin: 5px 15px;
   padding: 20px;
-  width: 300px;
+  width: 250px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: ${({ theme }) => theme.color.primaryColor};
   border: 2px solid ${({ theme }) => theme.color.primaryColor};

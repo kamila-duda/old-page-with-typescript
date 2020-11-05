@@ -98,4 +98,5 @@ export const StyledDetail = styled.span`
 `;
 export const StyledLine = styled.p`
   font-weight: bold;
+  text-align: center;
 `;
