@@ -8,6 +8,7 @@ import {
   StyledFontAwesomeIcon,
 } from "./styled";
 import CV from "./../../../files/CVKamilaDuda.pdf";
+import CVang from "./../../../files/KDudaCVang.pdf";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
 const AboutPage = () => {
@@ -47,7 +48,7 @@ const AboutPage = () => {
       <IconsContainer />
       <StyledText ref={componentRef}>{textTyping}</StyledText>
       <StyledContainer>
-        <StyledLink href={CV} download>
+        <StyledLink href={CVang} download>
           Download CV <StyledFontAwesomeIcon icon={faFilePdf} />
         </StyledLink>
         <StyledLink href={CV} download>

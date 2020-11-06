@@ -65,6 +65,9 @@ export const StyledGithubLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.lightPrimaryColor};
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 15px;
+  }
 `;
 export const StyledLink = styled(StyledGithubLink)`
   font-size: 33px;
@@ -99,4 +102,7 @@ export const StyledDetail = styled.span`
 export const StyledLine = styled.p`
   font-weight: bold;
   text-align: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 15px;
+  }
 `;
