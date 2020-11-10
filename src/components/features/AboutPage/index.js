@@ -22,11 +22,13 @@ const AboutPage = () => {
   const onScrollPage = () => {
     if (window.pageYOffset > componentRef.current.offsetTop - 400) {
       setIsScrolling(true);
-    } else {
-      setIsScrolling(false);
+      window.removeEventListener("scroll", onScrollPage)
     }
   };
-  window.onscroll = onScrollPage;
+  
+  useEffect(()=>{
+    window.addEventListener("scroll", onScrollPage)
+  }, []);
 
   useEffect(() => {
     if (isScrolling) {
