@@ -25,7 +25,7 @@ const AboutPage = () => {
       window.removeEventListener("scroll", onScrollPage)
     }
   };
-  
+
   useEffect(()=>{
     window.addEventListener("scroll", onScrollPage)
   }, []);
@@ -51,10 +51,10 @@ const AboutPage = () => {
       <StyledText ref={componentRef}>{textTyping}</StyledText>
       <StyledContainer>
         <StyledLink href={CVang} download>
-          Download CV <StyledFontAwesomeIcon icon={faFilePdf} />
+          CV in English<StyledFontAwesomeIcon icon={faFilePdf} />
         </StyledLink>
         <StyledLink href={CV} download>
-          Pobierz CV <StyledFontAwesomeIcon icon={faFilePdf} />
+          CV in Polish<StyledFontAwesomeIcon icon={faFilePdf} />
         </StyledLink>
       </StyledContainer>
     </Container>

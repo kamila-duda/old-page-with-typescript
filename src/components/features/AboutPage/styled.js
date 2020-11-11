@@ -36,18 +36,18 @@ export const StyledContainer = styled.div`
 `;
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 50px;
-  transition: transform 2s ease-out;
+  transition: transform 1s ease-out;
   margin-left: 15px;
   @media (max-width: ${({theme})=>theme.breakpoint.s}){
-    animation: rotateMobile 4s infinite;
+    animation: pulseMobile 4s infinite linear;
   }
-  @keyframes rotateMobile{
-    25%{transform: rotate(25deg)};
-    75%{transform: rotate(-25deg)};
+  @keyframes pulseMobile{
+    100%{transform: scale(1.2)};
   }
 `;
 export const StyledLink = styled.a`
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: bold;
   margin: 5px 15px;
   padding: 20px;
   width: 250px;
@@ -56,12 +56,13 @@ export const StyledLink = styled.a`
   justify-content: center;
   text-decoration: none;
   color: ${({ theme }) => theme.color.primaryColor};
-  border: 2px solid ${({ theme }) => theme.color.primaryColor};
+  border: 4px solid ${({ theme }) => theme.color.primaryColor};
   border-radius: 15px;
   &:hover {
     color: ${({ theme }) => theme.color.lightPrimaryColor};
+    border: 4px solid ${({ theme }) => theme.color.lightPrimaryColor};
     ${StyledFontAwesomeIcon} {
-      transform: rotate(360deg);
+      transform: scale(1.2);
     }
   }
 `;
