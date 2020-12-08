@@ -7,7 +7,6 @@ import {
   StyledImage,
   StyledDetailsContainer,
   StyledDetail,
-  StyledSubtitle,
   StyledArticle,
   StyledLink,
   StyledGithubLink,
@@ -17,11 +16,12 @@ import {
   StyledLine,
 } from "./styled";
 import { projects } from "./projects";
+import Subtitle from "../../common/Subtitle";
 
 const ProjectsPage = () => {
   return (
     <Container>
-      <StyledSubtitle>My projects</StyledSubtitle>
+      <Subtitle subtitle={"Projects"} />
       {projects.map((category) => (
         <StyledArticle key={category.title}>
           <StyledTextContainer>

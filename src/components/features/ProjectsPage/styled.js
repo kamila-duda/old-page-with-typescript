@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import background from "../../../images/tlo.png";
 
-export const StyledSubtitle = styled.h2`
-  width: 100%;
-  text-transform: uppercase;
-`;
 export const StyledArticle = styled.article`
   width: 100%;
   display: flex;

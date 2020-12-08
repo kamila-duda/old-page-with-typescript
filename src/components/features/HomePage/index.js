@@ -8,6 +8,7 @@ import {
 } from "./styled";
 import Container from "../../common/Container";
 import IconsContainer from "./IconsContainer";
+import CvContainer from "./CvContainer";
 
 const HomePage = () => {
   return (
@@ -18,7 +19,8 @@ const HomePage = () => {
           <StyledText>I'm Kamila </StyledText>
           <StyledText>a passionate</StyledText>
           <StyledText>Frontend Developer</StyledText>
-          <IconsContainer/>
+          <IconsContainer />
+          <CvContainer />
         </StyledContainer>
         <StyledImage src={profile} />
       </Container>

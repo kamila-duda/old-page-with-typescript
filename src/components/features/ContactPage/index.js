@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../../common/Container";
 import {
-  StyledSubtitle,
   StyledLine,
   StyledContainer,
   StyledLink,
@@ -9,11 +8,12 @@ import {
 } from "./styled";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Subtitle from "../../common/Subtitle";
 
 const ContactPage = () => {
   return (
     <Container>
-      <StyledSubtitle>Contact</StyledSubtitle>
+      <Subtitle subtitle={"Contact"} />
       <StyledLine>You can contact with me by:</StyledLine>
       <StyledContainer>
         <StyledLink href="mailto: k.duda@mailplus.pl">

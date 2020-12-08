@@ -29,45 +29,14 @@ export const StyledText = styled.p`
     font-weight: normal;
   }
 `;
-export const StyledContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  font-size: 50px;
-  transition: transform 1s ease-out;
-  margin-left: 15px;
-  @media (max-width: ${({theme})=>theme.breakpoint.s}){
-    animation: pulseMobile 4s infinite linear;
-  }
-  @keyframes pulseMobile{
-    100%{transform: scale(1.2)};
-  }
-`;
-export const StyledLink = styled.a`
-  font-size: 20px;
-  font-weight: bold;
-  margin: 5px 15px;
-  padding: 20px;
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: ${({ theme }) => theme.color.primaryColor};
-  border: 4px solid ${({ theme }) => theme.color.primaryColor};
-  border-radius: 15px;
-  &:hover {
-    color: ${({ theme }) => theme.color.lightPrimaryColor};
-    border: 4px solid ${({ theme }) => theme.color.lightPrimaryColor};
-    ${StyledFontAwesomeIcon} {
-      transform: scale(1.2);
-    }
-  }
-`;
 export const StyledList = styled.ul`
-  flex-basis: 50%;
+  flex-basis: 45%;
+  min-height: 200px;
+  align-self: flex-start;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 3px 4px 14px -2px #000000;
   `;
   export const StyledTitle = styled.h2`
   font-weight: bold;

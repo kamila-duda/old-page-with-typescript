@@ -1,20 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../common/Container";
+import Subtitle from "../../common/Subtitle";
 import {
   StyledText,
-  StyledContainer,
-  StyledLink,
-  StyledFontAwesomeIcon,
   StyledList,
   StyledTitle,
 } from "./styled";
-import CV from "./../../../files/Kamila Duda_CV_PL.pdf";
-import CVang from "./../../../files/Kamila Duda_CV_ANG.pdf";
-import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
 const AboutPage = () => {
   const textToShow =
-    "In 2019, I decided to change my sector to programming. I started learning HTML, CSS, and JavaScript. After learning Bootstrap, my first page was created. Every day I systematically expand my knowledge by reading books, blogs, and attempting online courses. I know the basics of PHP, MySQL, XML, and AJAX, I used also the WordPress platform. In my portfolio, I have websites, web applications downloading data from API, games, and a group project.";
+    "In 2019, I decided to change my sector to programming. I started learning HTML, CSS, and JavaScript. After learning Bootstrap, my first page was created. Every day I systematically expand my knowledge by reading books, blogs, and attempting online courses. In my portfolio, I have websites, web applications downloading data from API, games, and a group project.";
   const [textTyping, setTextTyping] = useState("");
   const [count, setCount] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -49,6 +44,7 @@ const AboutPage = () => {
   return (
     <Container>
       <StyledText ref={componentRef}>{textTyping}</StyledText>
+      <Subtitle subtitle={"Skills"} />
       <StyledList>
       <StyledTitle>Designing and creating websites: </StyledTitle>
       <li>HTML i CSS (semantic, RWD, Flexbox, BEM)</li>
@@ -74,14 +70,6 @@ const AboutPage = () => {
       <li>Trello</li>
       <li>Markdown</li>
       </StyledList>
-      <StyledContainer>
-        <StyledLink href={CVang} download>
-          CV in English<StyledFontAwesomeIcon icon={faFilePdf} />
-        </StyledLink>
-        <StyledLink href={CV} download>
-          CV in Polish<StyledFontAwesomeIcon icon={faFilePdf} />
-        </StyledLink>
-      </StyledContainer>
     </Container>
   );
 };
