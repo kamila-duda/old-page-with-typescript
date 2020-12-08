@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.69eda509.chunk.css",
-    "main.js": "/static/js/main.1ecce1df.chunk.js",
-    "main.js.map": "/static/js/main.1ecce1df.chunk.js.map",
+    "main.js": "/static/js/main.a27aed48.chunk.js",
+    "main.js.map": "/static/js/main.a27aed48.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d7d1311.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d7d1311.js.map",
-    "static/js/2.db1593ac.chunk.js": "/static/js/2.db1593ac.chunk.js",
-    "static/js/2.db1593ac.chunk.js.map": "/static/js/2.db1593ac.chunk.js.map",
+    "static/js/2.b906b898.chunk.js": "/static/js/2.b906b898.chunk.js",
+    "static/js/2.b906b898.chunk.js.map": "/static/js/2.b906b898.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3d8848a8f82c491358523cf1c3b075b7.js": "/precache-manifest.3d8848a8f82c491358523cf1c3b075b7.js",
+    "precache-manifest.87a73b38ec3128fe841054aa32382802.js": "/precache-manifest.87a73b38ec3128fe841054aa32382802.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.db1593ac.chunk.js.LICENSE.txt": "/static/js/2.db1593ac.chunk.js.LICENSE.txt",
-    "static/media/CVKamilaDuda.pdf": "/static/media/CVKamilaDuda.af8dcb58.pdf",
-    "static/media/KDudaCVang.pdf": "/static/media/KDudaCVang.3260cdc1.pdf",
+    "static/js/2.b906b898.chunk.js.LICENSE.txt": "/static/js/2.b906b898.chunk.js.LICENSE.txt",
+    "static/media/Kamila Duda_CV_ANG.pdf": "/static/media/Kamila Duda_CV_ANG.e6d835e4.pdf",
+    "static/media/Kamila Duda_CV_PL.pdf": "/static/media/Kamila Duda_CV_PL.3b8842b0.pdf",
     "static/media/ang.png": "/static/media/ang.d3f1e432.png",
-    "static/media/art.png": "/static/media/art.d566e3bd.png",
     "static/media/astronomy.png": "/static/media/astronomy.64fb7eb2.png",
     "static/media/bootstrap.svg": "/static/media/bootstrap.efc1aa32.svg",
     "static/media/budo.PNG": "/static/media/budo.deb69b7a.PNG",
@@ -26,6 +25,7 @@
     "static/media/hairdresser.PNG": "/static/media/hairdresser.9ca663bf.PNG",
     "static/media/html-5.svg": "/static/media/html-5.15a5a8bd.svg",
     "static/media/js.svg": "/static/media/js.bc786b35.svg",
+    "static/media/kidsAng.PNG": "/static/media/kidsAng.e32ebac2.PNG",
     "static/media/kissi.PNG": "/static/media/kissi.6b9e283a.PNG",
     "static/media/lansoft.png": "/static/media/lansoft.b2ca1b5f.png",
     "static/media/letterts.png": "/static/media/letterts.7ed5645f.png",
@@ -45,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1d7d1311.js",
-    "static/js/2.db1593ac.chunk.js",
+    "static/js/2.b906b898.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.1ecce1df.chunk.js"
+    "static/js/main.a27aed48.chunk.js"
   ]
 }

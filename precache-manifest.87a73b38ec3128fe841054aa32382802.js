@@ -1,43 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad5a77d1c7c0cbbdba3df94b7043c8a6",
+    "revision": "090bdc67ebae36eb11aac1613822762c",
     "url": "/index.html"
   },
   {
-    "revision": "643897acdfabe05ec44e",
+    "revision": "e86ad5bb435d602f779a",
     "url": "/static/css/main.69eda509.chunk.css"
   },
   {
-    "revision": "2ad4b368b530e6c5631f",
-    "url": "/static/js/2.db1593ac.chunk.js"
+    "revision": "95af9c20e89ab8d55f98",
+    "url": "/static/js/2.b906b898.chunk.js"
   },
   {
     "revision": "a3c66bc87fa121efed0250fdac2dfa2b",
-    "url": "/static/js/2.db1593ac.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b906b898.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "643897acdfabe05ec44e",
-    "url": "/static/js/main.1ecce1df.chunk.js"
+    "revision": "e86ad5bb435d602f779a",
+    "url": "/static/js/main.a27aed48.chunk.js"
   },
   {
     "revision": "9212cdf8da1296d1f5bf",
     "url": "/static/js/runtime-main.1d7d1311.js"
   },
   {
-    "revision": "af8dcb58668356aa4533eaa410cb64aa",
-    "url": "/static/media/CVKamilaDuda.af8dcb58.pdf"
+    "revision": "e6d835e4e35dba9662038521a089ee4b",
+    "url": "/static/media/Kamila Duda_CV_ANG.e6d835e4.pdf"
   },
   {
-    "revision": "3260cdc1d51bce210e5f2599584e6359",
-    "url": "/static/media/KDudaCVang.3260cdc1.pdf"
+    "revision": "3b8842b00abb5faa70fa78476787c530",
+    "url": "/static/media/Kamila Duda_CV_PL.3b8842b0.pdf"
   },
   {
     "revision": "d3f1e4320969b8acc3bd62a077b5911f",
     "url": "/static/media/ang.d3f1e432.png"
-  },
-  {
-    "revision": "d566e3bd723c2a7f7c4520cba4d304cb",
-    "url": "/static/media/art.d566e3bd.png"
   },
   {
     "revision": "64fb7eb24c8febf235d1a1f5b9c92a63",
@@ -78,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bc786b35d99c52f347831dc995ab7143",
     "url": "/static/media/js.bc786b35.svg"
+  },
+  {
+    "revision": "e32ebac25324f0d179cce535ff890bc6",
+    "url": "/static/media/kidsAng.e32ebac2.PNG"
   },
   {
     "revision": "6b9e283a7c1a70ae25b3efa08781eafd",
