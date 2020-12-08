@@ -9,7 +9,7 @@ import todo from "./../../../images/todo.png";
 import kissi from "./../../../images/kissi.PNG";
 import budo from "./../../../images/budo.PNG";
 import movies from "./../../../images/movies.PNG";
-import art from "./../../../images/art.png";
+import kidsAng from "./../../../images/kidsAng.PNG";
 import hair from "./../../../images/hairdresser.PNG";
 
 
@@ -60,6 +60,12 @@ export const projects = [
         link: "https://kamila-duda.github.io/angielski_quiz/",
         tags: ["HTML", "CSS", "JavaScript"],
       },
+      {
+        image: kidsAng,
+        code: "https://github.com/kamila-duda/angielski",
+        link: "https://kamila-duda.github.io/angielski/",
+        tags: ["React.js", "StyledComponents", "Redux", "Saga"],
+      },
     ],
   },
   {
@@ -99,11 +105,6 @@ export const projects = [
         code: "https://github.com/kamila-duda/hairdresser",
         link: "https://kamila-duda.github.io/hairdresser/",
         tags: ["HTML", "SCSS", "JavaScript"],
-      },
-      {
-        image: art,
-        link: "https://nawrot.000webhostapp.com/",
-        tags: ["Wordpress"],
       },
     ],
   },

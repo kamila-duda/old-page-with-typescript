@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../common/Container";
-import IconsContainer from "../AboutPage/IconsContainer";
 import {
   StyledText,
   StyledContainer,
   StyledLink,
   StyledFontAwesomeIcon,
+  StyledList,
+  StyledTitle,
 } from "./styled";
-import CV from "./../../../files/CVKamilaDuda.pdf";
-import CVang from "./../../../files/KDudaCVang.pdf";
+import CV from "./../../../files/Kamila Duda_CV_PL.pdf";
+import CVang from "./../../../files/Kamila Duda_CV_ANG.pdf";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
 const AboutPage = () => {
@@ -47,8 +48,32 @@ const AboutPage = () => {
 
   return (
     <Container>
-      <IconsContainer />
       <StyledText ref={componentRef}>{textTyping}</StyledText>
+      <StyledList>
+      <StyledTitle>Designing and creating websites: </StyledTitle>
+      <li>HTML i CSS (semantic, RWD, Flexbox, BEM)</li>
+      <li>SCSS</li>
+      <li>JavaScript</li>
+      <li>working with API (fetch, axios)</li>
+      </StyledList>
+      <StyledList>
+      <StyledTitle>Working with databases:</StyledTitle>
+      <li>MySQL (the basic)</li>
+      </StyledList>
+      <StyledList>
+      <StyledTitle>Frameworks:</StyledTitle>
+      <li>React (React Router, Saga, Redux Toolkit, React Hooks)</li>
+      <li>Styled Components</li>
+      <li>Bootstrap</li>
+      </StyledList>
+      <StyledList>
+      <StyledTitle>Other:</StyledTitle>
+      <li>GIT</li>
+      <li>Github Pull Request &amp; Review</li>
+      <li>Scrum</li>
+      <li>Trello</li>
+      <li>Markdown</li>
+      </StyledList>
       <StyledContainer>
         <StyledLink href={CVang} download>
           CV in English<StyledFontAwesomeIcon icon={faFilePdf} />

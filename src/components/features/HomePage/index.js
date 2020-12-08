@@ -7,6 +7,7 @@ import {
   StyledText,
 } from "./styled";
 import Container from "../../common/Container";
+import IconsContainer from "./IconsContainer";
 
 const HomePage = () => {
   return (
@@ -15,8 +16,9 @@ const HomePage = () => {
         <StyledContainer>
           <StyledText colored>&#10095;Hello, world!</StyledText>
           <StyledText>I'm Kamila </StyledText>
-          <StyledText>Junior Front-end</StyledText>
-          <StyledText>Developer</StyledText>
+          <StyledText>a passionate</StyledText>
+          <StyledText>Frontend Developer</StyledText>
+          <IconsContainer/>
         </StyledContainer>
         <StyledImage src={profile} />
       </Container>

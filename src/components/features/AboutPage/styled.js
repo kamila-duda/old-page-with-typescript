@@ -66,3 +66,9 @@ export const StyledLink = styled.a`
     }
   }
 `;
+export const StyledList = styled.ul`
+  flex-basis: 50%;
+  `;
+  export const StyledTitle = styled.h2`
+  font-weight: bold;
+  `;
