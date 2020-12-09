@@ -20,7 +20,7 @@ export const StyledNav = styled.nav`
 export const StyledNavList = styled.ul`
   list-style-type: none;
   display: flex;
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     display: none;
   }
 `;
@@ -78,7 +78,7 @@ export const StyledNavListMobile = styled.ul`
     css`
       margin: 0;
     `}
-  @media (min-width: ${({ theme }) => theme.breakpoint.xs}) {
+  @media (min-width: ${({ theme }) => theme.breakpoint.another}) {
     display: none;
   }
 `;

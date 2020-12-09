@@ -11,11 +11,13 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-weight: bold;
   transition: transform 1s ease-out;
   margin-left: 15px;
-  @media (max-width: ${({theme})=>theme.breakpoint.s}){
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     animation: pulseMobile 4s infinite linear;
   }
-  @keyframes pulseMobile{
-    100%{transform: scale(1.2)};
+  @keyframes pulseMobile {
+    100% {
+      transform: scale(1.2);
+    }
   }
 `;
 export const StyledLink = styled.a`
@@ -27,13 +29,18 @@ export const StyledLink = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color:  ${({theme})=>theme.color.white};
-  background-color: ${({theme})=>theme.color.primaryColor};
+  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.primaryColor};
   border-radius: 15px;
   &:hover {
     background-color: ${({ theme }) => theme.color.lightPrimaryColor};
     ${StyledFontAwesomeIcon} {
       transform: scale(1.2);
     }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    margin: 10px 5px;
+    font-size: 12px;
+    padding: 10px;
   }
 `;

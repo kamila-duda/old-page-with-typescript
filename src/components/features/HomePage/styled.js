@@ -37,15 +37,15 @@ export const StyledText = styled.h1`
         }
       }
       @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
-    font-size: 20px;
-  }
+        font-size: 20px;
+      }
       @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    font-size: 10px;
-  }
+        font-size: 10px;
+      }
     `}
 `;
 export const StyledContainer = styled.div`
-align-self: flex-end;
+  align-self: flex-end;
 `;
 export const StyledImage = styled.img`
   height: 80%;

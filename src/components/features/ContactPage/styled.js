@@ -17,7 +17,7 @@ export const StyledLink = styled.a`
   text-decoration: none;
   margin: 20px;
   color: ${({ theme }) => theme.color.primaryColor};
-  @media (max-width: ${({theme})=>theme.breakpoint.xs}){
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 70px;
   }
 `;

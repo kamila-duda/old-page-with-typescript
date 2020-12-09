@@ -37,7 +37,15 @@ export const StyledList = styled.ul`
   border-bottom: 1px solid black;
   border-radius: 15px;
   box-shadow: 3px 4px 14px -2px #000000;
-  `;
-  export const StyledTitle = styled.h2`
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 13px;
+    flex-basis: 100%;
+    min-height: 140px;
+  }
+`;
+export const StyledTitle = styled.h2`
   font-weight: bold;
-  `;
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    font-size: 14px;
+  }
+`;

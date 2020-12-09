@@ -16,7 +16,6 @@ function App() {
         <Section id="home">
           <HomePage />
         </Section>
-
         <Section id="about">
           <AboutPage />
         </Section>

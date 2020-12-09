@@ -11,7 +11,7 @@ export const StyledWrapperIcons = styled.div`
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   transition: transform 1s;
   font-size: 30px;
-  color: ${({theme})=>theme.color.primaryColor};
+  color: ${({ theme }) => theme.color.primaryColor};
   &:hover {
     color: ${({ theme }) => theme.color.lightPrimaryColor};
     transform: scale(1.2);

@@ -12,8 +12,20 @@ import php from "../../../../images/php.svg";
 import wordpress from "../../../../images/wordpress.svg";
 import git from "../../../../images/git.svg";
 import npm from "../../../../images/npm.svg";
-import { StyledSubtitle, StyledWrapperIcons, StyledFontAwesomeIcon, } from "./styled";
-import { faHtml5, faCss3Alt, faSass, faBootstrap, faJsSquare, faReact, faGitAlt} from "@fortawesome/free-brands-svg-icons";
+import {
+  StyledSubtitle,
+  StyledWrapperIcons,
+  StyledFontAwesomeIcon,
+} from "./styled";
+import {
+  faHtml5,
+  faCss3Alt,
+  faSass,
+  faBootstrap,
+  faJsSquare,
+  faReact,
+  faGitAlt,
+} from "@fortawesome/free-brands-svg-icons";
 
 const IconsContainer = () => {
   const icons = [
@@ -27,11 +39,11 @@ const IconsContainer = () => {
   ];
 
   return (
-      <StyledWrapperIcons>
-        {icons.map((icon) => (
-          <StyledFontAwesomeIcon icon={icon} />
-        ))}
-      </StyledWrapperIcons>
+    <StyledWrapperIcons>
+      {icons.map((icon) => (
+        <StyledFontAwesomeIcon icon={icon} />
+      ))}
+    </StyledWrapperIcons>
   );
 };
 
