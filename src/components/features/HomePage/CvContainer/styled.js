@@ -30,10 +30,10 @@ export const StyledLink = styled.a`
   justify-content: center;
   text-decoration: none;
   color: ${({ theme }) => theme.color.white};
-  background-color: ${({ theme }) => theme.color.primaryColor};
+  background-color: ${({ theme }) => theme.color.secondColor};
   border-radius: 15px;
   &:hover {
-    background-color: ${({ theme }) => theme.color.lightPrimaryColor};
+    background-color: ${({ theme }) => theme.color.primaryColor};
     ${StyledFontAwesomeIcon} {
       transform: scale(1.2);
     }

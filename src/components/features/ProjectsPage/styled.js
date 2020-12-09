@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import background from "../../../images/tlo.png";
 
 export const StyledArticle = styled.article`
@@ -58,6 +58,14 @@ export const StyledGithubLink = styled.a`
   transition: transform 1s;
   color: ${({ theme }) => theme.color.primaryColor};
   position: relative;
+  ${({ github }) =>
+    github &&
+    css`
+      background-color: ${({ theme }) => theme.color.secondColor};
+      padding: 10px;
+      border-radius: 15px;
+      color: ${({ theme }) => theme.color.white};
+    `}
   &:hover {
     color: ${({ theme }) => theme.color.lightPrimaryColor};
   }

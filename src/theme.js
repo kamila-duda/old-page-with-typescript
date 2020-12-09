@@ -4,6 +4,7 @@ export const theme = {
     blackTransparent: "rgba(0, 0, 0, 0.7)",
     primaryColor: "teal",
     lightPrimaryColor: "#20b2aa",
+    secondColor: "#f4068a",
     white: "#FFFFFF",
   },
   breakpoint: {
