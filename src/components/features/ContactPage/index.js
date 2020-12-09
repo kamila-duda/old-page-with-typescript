@@ -19,7 +19,7 @@ const ContactPage = () => {
         <StyledLink href="mailto: k.duda@mailplus.pl">
           <StyledFontAwesomeIcon icon={faEnvelopeSquare} />
         </StyledLink>
-        <StyledLink href="https://www.linkedin.com/in/kamila-duda-6676141aa/" target="_blank">
+        <StyledLink href="https://www.linkedin.com/in/kamila-duda" target="_blank">
           <StyledFontAwesomeIcon icon={faLinkedin} />
         </StyledLink>
         <StyledLink href="https://github.com/kamila-duda" target="_blank">
