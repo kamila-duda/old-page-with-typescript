@@ -97,7 +97,7 @@ export const projects = [
       },
       {
         image: budo,
-        link: "http://kd2020-pl.stackstaging.com/",
+        link: "http://budowlana.atwebpages.com/",
         tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       },
       {
