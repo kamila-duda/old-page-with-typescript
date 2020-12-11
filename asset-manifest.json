@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.69eda509.chunk.css",
-    "main.js": "/static/js/main.724b49c1.chunk.js",
-    "main.js.map": "/static/js/main.724b49c1.chunk.js.map",
+    "main.js": "/static/js/main.38ca765d.chunk.js",
+    "main.js.map": "/static/js/main.38ca765d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d7d1311.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d7d1311.js.map",
     "static/js/2.b906b898.chunk.js": "/static/js/2.b906b898.chunk.js",
     "static/js/2.b906b898.chunk.js.map": "/static/js/2.b906b898.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2cef5cd73a49731b1557ef9361f9040c.js": "/precache-manifest.2cef5cd73a49731b1557ef9361f9040c.js",
+    "precache-manifest.7bc14d3f394cb2f74b26dd9e05788b6a.js": "/precache-manifest.7bc14d3f394cb2f74b26dd9e05788b6a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
     "static/js/2.b906b898.chunk.js.LICENSE.txt": "/static/js/2.b906b898.chunk.js.LICENSE.txt",
@@ -16,15 +16,10 @@
     "static/media/Kamila Duda_CV_PL.pdf": "/static/media/Kamila Duda_CV_PL.6b4d100a.pdf",
     "static/media/ang.png": "/static/media/ang.d3f1e432.png",
     "static/media/astronomy.png": "/static/media/astronomy.64fb7eb2.png",
-    "static/media/bootstrap.svg": "/static/media/bootstrap.efc1aa32.svg",
     "static/media/budo.PNG": "/static/media/budo.deb69b7a.PNG",
     "static/media/cantor.png": "/static/media/cantor.ce5e2139.png",
-    "static/media/css.svg": "/static/media/css.55338d57.svg",
     "static/media/diet.png": "/static/media/diet.6bb15844.png",
-    "static/media/git.svg": "/static/media/git.f3f4f15d.svg",
     "static/media/hairdresser.PNG": "/static/media/hairdresser.9ca663bf.PNG",
-    "static/media/html-5.svg": "/static/media/html-5.15a5a8bd.svg",
-    "static/media/js.svg": "/static/media/js.bc786b35.svg",
     "static/media/kidsAng.PNG": "/static/media/kidsAng.e32ebac2.PNG",
     "static/media/kissi.PNG": "/static/media/kissi.6b9e283a.PNG",
     "static/media/lansoft.png": "/static/media/lansoft.b2ca1b5f.png",
@@ -32,21 +27,13 @@
     "static/media/me.png": "/static/media/me.99a12204.png",
     "static/media/money.png": "/static/media/money.fa3a7258.png",
     "static/media/movies.PNG": "/static/media/movies.6bc506e5.PNG",
-    "static/media/mysql.svg": "/static/media/mysql.f79f40aa.svg",
-    "static/media/npm.svg": "/static/media/npm.f6163a86.svg",
-    "static/media/php.svg": "/static/media/php.5f4952d8.svg",
-    "static/media/react.svg": "/static/media/react.1a2e6932.svg",
-    "static/media/redux.svg": "/static/media/redux.85772647.svg",
-    "static/media/saga.svg": "/static/media/saga.ac379ea3.svg",
-    "static/media/sass.svg": "/static/media/sass.3023657d.svg",
     "static/media/tlo.png": "/static/media/tlo.c4f2cdc7.png",
-    "static/media/todo.png": "/static/media/todo.3d6f357e.png",
-    "static/media/wordpress.svg": "/static/media/wordpress.c306fa8a.svg"
+    "static/media/todo.png": "/static/media/todo.3d6f357e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1d7d1311.js",
     "static/js/2.b906b898.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.724b49c1.chunk.js"
+    "static/js/main.38ca765d.chunk.js"
   ]
 }
