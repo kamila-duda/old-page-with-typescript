@@ -65,6 +65,7 @@ export const StyledGithubLink = styled.a`
       padding: 10px;
       border-radius: 15px;
       color: ${({ theme }) => theme.color.white};
+      display: block;
     `}
   &:hover {
     color: ${({ theme }) => theme.color.lightPrimaryColor};
