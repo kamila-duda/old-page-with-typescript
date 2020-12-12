@@ -16,7 +16,7 @@ const ContactPage = () => {
       <Subtitle subtitle={"Contact"} />
       <StyledLine>You can contact with me by:</StyledLine>
       <StyledContainer>
-        <StyledLink href="mailto: k.duda@mailplus.pl">
+        <StyledLink href="mailto: kamiladuda@int.pl">
           <StyledFontAwesomeIcon icon={faEnvelopeSquare} />
         </StyledLink>
         <StyledLink href="https://www.linkedin.com/in/kamila-duda" target="_blank">
