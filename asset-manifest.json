@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.69eda509.chunk.css",
-    "main.js": "/static/js/main.eee87f7d.chunk.js",
-    "main.js.map": "/static/js/main.eee87f7d.chunk.js.map",
+    "main.js": "/static/js/main.654c4f0d.chunk.js",
+    "main.js.map": "/static/js/main.654c4f0d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d7d1311.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d7d1311.js.map",
     "static/js/2.b906b898.chunk.js": "/static/js/2.b906b898.chunk.js",
     "static/js/2.b906b898.chunk.js.map": "/static/js/2.b906b898.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7759070959b7cc09f916e5841314b60e.js": "/precache-manifest.7759070959b7cc09f916e5841314b60e.js",
+    "precache-manifest.66f39855044e276f29cc8345339fb244.js": "/precache-manifest.66f39855044e276f29cc8345339fb244.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
     "static/js/2.b906b898.chunk.js.LICENSE.txt": "/static/js/2.b906b898.chunk.js.LICENSE.txt",
     "static/media/Kamila Duda_CV_ANG.pdf": "/static/media/Kamila Duda_CV_ANG.c7f10c61.pdf",
-    "static/media/Kamila Duda_CV_PL.pdf": "/static/media/Kamila Duda_CV_PL.072c1990.pdf",
+    "static/media/Kamila Duda_CV_PL.pdf": "/static/media/Kamila Duda_CV_PL.6458dabb.pdf",
     "static/media/ang.png": "/static/media/ang.d3f1e432.png",
     "static/media/astronomy.png": "/static/media/astronomy.64fb7eb2.png",
     "static/media/budo.PNG": "/static/media/budo.deb69b7a.PNG",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.1d7d1311.js",
     "static/js/2.b906b898.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.eee87f7d.chunk.js"
+    "static/js/main.654c4f0d.chunk.js"
   ]
 }
