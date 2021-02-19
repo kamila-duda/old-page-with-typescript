@@ -11,6 +11,7 @@ import budo from "./../../../images/budo.PNG";
 import movies from "./../../../images/movies.PNG";
 import kidsAng from "./../../../images/kidsAng.PNG";
 import hair from "./../../../images/hairdresser.PNG";
+import todoVue from "./../../../images/todoVue.PNG";
 
 
 export const projects = [
@@ -29,6 +30,12 @@ export const projects = [
         code: "https://github.com/kamila-duda/todo-list-react-redux",
         link: "https://kamila-duda.github.io/todo-list-react-redux/",
         tags: ["React.js", "StyledComponents", "Redux", "Saga"],
+      },
+      {
+        image: todoVue,
+        code: "https://github.com/kamila-duda/todo-list-vue",
+        link: "https://kamila-duda.github.io/todo-list-vue/",
+        tags: ["Vue.js", "CSS"],
       },
       {
         image: cantor,
