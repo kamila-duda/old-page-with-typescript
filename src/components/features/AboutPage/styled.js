@@ -36,6 +36,7 @@ export const StyledList = styled.ul`
   border-bottom: 1px solid black;
   border-radius: 15px;
   box-shadow: 3px 4px 14px -2px #000000;
+  background-color: #fdfdfdd9;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 13px;
     flex-basis: 100%;
