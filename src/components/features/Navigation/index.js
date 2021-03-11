@@ -21,7 +21,7 @@ const Navigation = () => {
         {sections.map(({ id, onClick, selected }) => (
           <StyledNavItem key={id}>
             <StyledNavLink onClick={onClick} selected={selected}>
-              &#60;{id}/&#62;
+              {id}
             </StyledNavLink>
           </StyledNavItem>
         ))}
@@ -36,7 +36,7 @@ const Navigation = () => {
               }}
               selected={selected}
             >
-              &#60;{id}/&#62;
+              {id}
             </StyledNavLink>
           </StyledNavItem>
         ))}

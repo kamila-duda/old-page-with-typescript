@@ -1,27 +1,24 @@
 import React from "react";
-import profile from "../../../images/me.png";
+import profile from "../../../images/me2.jpg";
 import {
   StyledHomePage,
-  StyledContainer,
   StyledImage,
   StyledText,
 } from "./styled";
 import Container from "../../common/Container";
 import IconsContainer from "./IconsContainer";
-import CvContainer from "./CvContainer";
 
 const HomePage = () => {
   return (
     <StyledHomePage>
       <Container>
-        <StyledContainer>
-          <StyledText colored>&#10095;Hello, world!</StyledText>
-          <StyledText>I'm Kamila </StyledText>
+        <div>
+          <StyledText colored>Hello world!</StyledText>
+          <StyledText>I am Kamila </StyledText>
           <StyledText>a passionate</StyledText>
           <StyledText>Frontend Developer</StyledText>
           <IconsContainer />
-          <CvContainer />
-        </StyledContainer>
+        </div>
         <StyledImage src={profile} />
       </Container>
     </StyledHomePage>

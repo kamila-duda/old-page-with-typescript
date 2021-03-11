@@ -2,9 +2,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-top: 1px solid ${({theme})=>theme.color.secondColor};
+  border-bottom: 1px solid ${({theme})=>theme.color.secondColor};
+  margin-bottom: 20px;
+`;
+export const StyledParagraph = styled.p`
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
 `;
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 20px;
@@ -31,6 +41,7 @@ export const StyledLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.secondColor};
+  border: 3px solid ${({theme})=>theme.color.primaryColor};
   border-radius: 15px;
   &:hover {
     background-color: ${({ theme }) => theme.color.primaryColor};

@@ -11,8 +11,10 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: inherit;
 } 
 body{
-  background-image: url(${background});
+  background-color: ${({theme})=>theme.color.white};
   background-size: 15%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 0;
 }
 `;

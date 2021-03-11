@@ -7,12 +7,12 @@ export const StyledHomePage = styled.div`
 `;
 export const StyledText = styled.h1`
   color: ${({ theme }) => theme.color.fontColor};
-  font-size: 35px;
+  font-size: 64px;
   font-weight: bold;
   margin: 0;
   line-height: 1.4;
   @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
-    font-size: 30px;
+    font-size: 48px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     font-size: 20px;
@@ -20,8 +20,8 @@ export const StyledText = styled.h1`
   ${({ colored }) =>
     colored &&
     css`
-      color: ${({ theme }) => theme.color.primaryColor};
-      font-size: 25px;
+      color: ${({ theme }) => theme.color.secondColor};
+      font-size: 48px;
       margin-bottom: 5px;
       &::after {
         content: "_";
@@ -37,25 +37,19 @@ export const StyledText = styled.h1`
         }
       }
       @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
-        font-size: 20px;
+        font-size: 36px;
       }
       @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
         font-size: 10px;
       }
     `}
 `;
-export const StyledContainer = styled.div`
-  align-self: flex-end;
-`;
 export const StyledImage = styled.img`
-  height: 80%;
+  height: 90%;
   object-fit: cover;
   align-self: flex-end;
   right: 100px;
   bottom: 0;
-  @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
-    height: 75%;
-  }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     height: 60%;
   }

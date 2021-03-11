@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../common/Container";
 import Subtitle from "../../common/Subtitle";
+import CvContainer from "./CvContainer"
 import {
   StyledText,
   StyledList,
@@ -44,6 +45,7 @@ const AboutPage = () => {
   return (
     <Container>
       <StyledText ref={componentRef}>{textTyping}</StyledText>
+      <CvContainer />
       <Subtitle subtitle={"Skills"} />
       <StyledList>
       <StyledTitle>Designing and creating websites: </StyledTitle>

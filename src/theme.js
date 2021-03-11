@@ -2,9 +2,9 @@ export const theme = {
   color: {
     fontColor: "#000000",
     blackTransparent: "rgba(0, 0, 0, 0.7)",
-    primaryColor: "teal",
+    primaryColor: "#2E4B96",
     lightPrimaryColor: "#20b2aa",
-    secondColor: "#f4068a",
+    secondColor: "#A2AAC0",
     white: "#FFFFFF",
   },
   breakpoint: {

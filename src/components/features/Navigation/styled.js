@@ -11,7 +11,7 @@ export const StyledNav = styled.nav`
   margin: 0;
   position: fixed;
   width: 100%;
-  background-image: url(${tlo});
+  background-color: ${({ theme }) => theme.color.primaryColor};
   z-index: 100;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 0;
@@ -35,7 +35,7 @@ export const StyledNavLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
-  color: ${({ theme }) => theme.color.primaryColor};
+  color: ${({ theme }) => theme.color.white};
   position: relative;
 
   &::after {

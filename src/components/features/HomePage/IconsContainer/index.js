@@ -2,6 +2,7 @@ import React from "react";
 import {
   StyledWrapperIcons,
   StyledFontAwesomeIcon,
+  StyledIcon
 } from "./styled";
 import {
   faHtml5,
@@ -27,7 +28,9 @@ const IconsContainer = () => {
   return (
     <StyledWrapperIcons>
       {icons.map((icon) => (
-        <StyledFontAwesomeIcon key={icon.iconName} icon={icon} />
+        <StyledIcon>
+          <StyledFontAwesomeIcon key={icon.iconName} icon={icon} />
+        </StyledIcon>
       ))}
     </StyledWrapperIcons>
   );
