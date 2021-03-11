@@ -24,7 +24,7 @@ const AboutPage = () => {
   };
 
   useEffect(()=>{
-    window.addEventListener("scroll", onScrollPage)
+    window.addEventListener("scroll", onScrollPage);
   }, []);
 
   useEffect(() => {

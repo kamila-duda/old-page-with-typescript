@@ -1,81 +1,104 @@
 import styled, { css } from "styled-components";
-import background from "../../../images/tlo.png";
 
 export const StyledArticle = styled.article`
   width: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin-bottom: 20px;
 `;
 export const StyledTextContainer = styled.div`
-  max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: justify;
 `;
-export const StyledImagesContainer = styled.div`
-  width: 650px;
-  min-height: 500px;
+export const StyledCategoryTitle = styled.h3`
+  color: ${({ theme }) => theme.color.primaryColor};
+  text-transform: uppercase;
+`;
+export const StyledProjectsContainer = styled.div`
   position: relative;
+  display: grid;
+  height: auto;
+  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    width: 320px;
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
+export const StyledDetailsContainer = styled.p`
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: max-content;
+  top: 30%;
+  text-transform: uppercase;
+  cursor: pointer;
+`;
 export const StyledCard = styled.div`
-  height: 400px;
-  width: 300px;
+  position: relative;
+  margin: 8px;
+  text-align: center;
   display: flex;
-  background-image: url(${background});
-  justify-content: center;
   flex-direction: column;
-  cursor: default;
-  border-radius: 15px;
-  box-shadow: 0px 0px 25px 5px ${({ theme }) => theme.color.fontColor};
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    width: 180px;
-    height: 300px;
+  justify-content: space-around;
+  background-color: ${({ theme }) => theme.color.secondColor};
+  &::before{
+  position: absolute;
+  display: none;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+    &:hover::before{
+      display: block;
+    }
+  
+    &:hover {
+      ${StyledDetailsContainer}{
+         display: block;
+      }
+   }
   }
 `;
 export const StyledImage = styled.img`
+  display: block;
   width: 100%;
-  height: 60%;
   object-fit: contain;
 `;
-export const StyledDetailsContainer = styled.p`
-  width: 100%;
-  margin: 5px 0;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
 export const StyledGithubLink = styled.a`
-  font-size: 20px;
   margin: 5px 15px;
   text-decoration: none;
   transition: transform 1s;
-  color: ${({ theme }) => theme.color.primaryColor};
+  color: ${({ theme }) => theme.color.white};
   position: relative;
   ${({ github }) =>
     github &&
     css`
-      background-color: ${({ theme }) => theme.color.secondColor};
+      background-color: ${({ theme }) => theme.color.primaryColor};
       padding: 10px;
       border-radius: 15px;
       color: ${({ theme }) => theme.color.white};
       display: block;
     `}
   &:hover {
-    color: ${({ theme }) => theme.color.lightPrimaryColor};
+    color: ${({ theme }) => theme.color.secondColor};
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 15px;
   }
 `;
 export const StyledLink = styled(StyledGithubLink)`
-  font-size: 33px;
+  font-size: 64px;
   &:hover {
     transform: scale(1.2);
     &::before {
@@ -92,12 +115,20 @@ export const StyledLink = styled(StyledGithubLink)`
     }
   }
 `;
+export const StyledTagContainer = styled.div`
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 export const StyledDetail = styled.span`
   border: 2px solid ${({ theme }) => theme.color.primaryColor};
   border-radius: 15px;
   font-size: 10px;
   padding: 5px;
+  margin: 1px;
   text-align: center;
+  background-color: ${({ theme }) => theme.color.white};
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 2px;
     margin: 1px;

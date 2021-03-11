@@ -29,14 +29,14 @@ export const StyledText = styled.p`
   }
 `;
 export const StyledList = styled.ul`
-  flex-basis: 45%;
+  flex-basis: 48%;
   min-height: 200px;
+  margin: 8px;
+  padding: 8px 8px 8px 40px;
   align-self: flex-start;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  border-radius: 15px;
-  box-shadow: 3px 4px 14px -2px #000000;
-  background-color: #fdfdfdd9;
+  border: 3px solid ${({ theme }) => theme.color.primaryColor};
+  border-radius: 50px;
+  background-color: ${({ theme }) => theme.color.white};
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 13px;
     flex-basis: 100%;
@@ -44,7 +44,6 @@ export const StyledList = styled.ul`
   }
 `;
 export const StyledTitle = styled.h2`
-  font-weight: bold;
   @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     font-size: 14px;
   }

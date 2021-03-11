@@ -1,5 +1,10 @@
 import React from "react";
-import { StyledContainer, StyledLink, StyledFontAwesomeIcon, StyledParagraph } from "./styled";
+import {
+  StyledContainer,
+  StyledLink,
+  StyledFontAwesomeIcon,
+  StyledParagraph,
+} from "./styled";
 import CV from "./../../../../files/Kamila Duda_CV_PL.pdf";
 import CVang from "./../../../../files/Kamila Duda_CV_ANG.pdf";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";

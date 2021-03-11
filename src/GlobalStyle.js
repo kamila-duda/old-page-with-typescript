@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-import background from "./images/tlo.png";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -11,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: inherit;
 } 
 body{
-  background-color: ${({theme})=>theme.color.white};
+  background-color: ${({ theme }) => theme.color.white};
   background-size: 15%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;

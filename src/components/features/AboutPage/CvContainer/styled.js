@@ -6,9 +6,9 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 1px solid ${({theme})=>theme.color.secondColor};
-  border-bottom: 1px solid ${({theme})=>theme.color.secondColor};
-  margin-bottom: 20px;
+  border-top: 3px solid ${({theme})=>theme.color.secondColor};
+  border-bottom: 3px solid ${({theme})=>theme.color.secondColor};
+  margin-bottom: 60px;
 `;
 export const StyledParagraph = styled.p`
   width: 100%;
@@ -42,7 +42,7 @@ export const StyledLink = styled.a`
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.secondColor};
   border: 3px solid ${({theme})=>theme.color.primaryColor};
-  border-radius: 15px;
+  border-radius: 40px;
   &:hover {
     background-color: ${({ theme }) => theme.color.primaryColor};
     ${StyledFontAwesomeIcon} {

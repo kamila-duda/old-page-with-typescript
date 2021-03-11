@@ -1,10 +1,5 @@
 import styled, { css } from "styled-components";
 
-export const StyledHomePage = styled.div`
-  height: 100vh;
-  width: 100%;
-  position: relative;
-`;
 export const StyledText = styled.h1`
   color: ${({ theme }) => theme.color.fontColor};
   font-size: 64px;
@@ -47,9 +42,6 @@ export const StyledText = styled.h1`
 export const StyledImage = styled.img`
   height: 90%;
   object-fit: cover;
-  align-self: flex-end;
-  right: 100px;
-  bottom: 0;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     height: 60%;
   }

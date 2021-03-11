@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 export const StyledLine = styled.p`
@@ -12,19 +11,19 @@ export const StyledContainer = styled.div`
   margin-bottom: 30px;
 `;
 export const StyledLink = styled.a`
-  font-size: 120px;
-  margin: 5px 15px;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   margin: 20px;
-  color: ${({ theme }) => theme.color.primaryColor};
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    font-size: 70px;
-  }
-`;
-export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  transition: transform 1s;
+  border: 3px solid ${({ theme }) => theme.color.secondColor};
+  border-radius: 50%;
+  color: ${({ theme }) => theme.color.secondColor};
   &:hover {
-    color: ${({ theme }) => theme.color.lightPrimaryColor};
-    transform: scale(1.2);
-  }
+    color: ${({ theme }) => theme.color.primaryColor};
+      border: 3px solid ${({ theme }) => theme.color.primaryColor};
+    }
 `;

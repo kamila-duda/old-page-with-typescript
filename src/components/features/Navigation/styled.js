@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import tlo from "../../../images/tlo.png";
 
 export const StyledNav = styled.nav`
   list-style-type: none;
@@ -56,13 +55,14 @@ export const StyledNavLink = styled.a`
   }
 `;
 export const StyledIcon = styled.div`
-  padding: 10px;
   position: absolute;
   top: 0px;
   right: 10px;
   font-size: 20px;
-  background-image: url(${tlo});
-  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid ${({ theme }) => theme.color.primaryColor};
+  border-radius: 50px;
   color: ${({ theme }) => theme.color.primaryColor};
 `;
 export const StyledNavListMobile = styled.ul`
@@ -77,6 +77,11 @@ export const StyledNavListMobile = styled.ul`
     open &&
     css`
       margin: 0;
+      width: 99%;
+      ${StyledIcon} {
+        border: 1px solid ${({ theme }) => theme.color.white};
+        color: ${({ theme }) => theme.color.white};
+      }
     `}
   @media (min-width: ${({ theme }) => theme.breakpoint.another}) {
     display: none;

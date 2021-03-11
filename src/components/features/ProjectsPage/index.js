@@ -1,19 +1,20 @@
 import React from "react";
-import ReactCardCarousel from "react-card-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faSearch } from "@fortawesome/free-solid-svg-icons";
 import Container from "../../common/Container";
 import {
   StyledImage,
+  StyledCategoryTitle,
   StyledDetailsContainer,
   StyledDetail,
   StyledArticle,
   StyledLink,
   StyledGithubLink,
   StyledTextContainer,
-  StyledImagesContainer,
+  StyledProjectsContainer,
   StyledCard,
   StyledLine,
+  StyledTagContainer
 } from "./styled";
 import { projects } from "./projects";
 import Subtitle from "../../common/Subtitle";
@@ -25,41 +26,39 @@ const ProjectsPage = () => {
       {projects.map((category) => (
         <StyledArticle key={category.title}>
           <StyledTextContainer>
-            <h3>
+            <StyledCategoryTitle>
               {category.title} ({category.items.length}):
-            </h3>
+            </StyledCategoryTitle>
             <p>{category.description}</p>
           </StyledTextContainer>
-          <StyledImagesContainer>
-            <ReactCardCarousel>
-              {category.items.map((item) => (
-                <StyledCard key={item.link}>
-                  <StyledImage src={item.image} alt="" />
-                  <StyledDetailsContainer>
-                    <StyledLink
-                      href={item.code}
-                      data-tooltip="view code"
-                      target="_blank"
-                    >
-                      <FontAwesomeIcon icon={faCode} />
-                    </StyledLink>
-                    <StyledLink
-                      href={item.link}
-                      data-tooltip="view live"
-                      target="_blank"
-                    >
-                      <FontAwesomeIcon icon={faSearch} />
-                    </StyledLink>
-                  </StyledDetailsContainer>
-                  <StyledDetailsContainer>
-                    {item.tags.map((tag) => (
-                      <StyledDetail key={tag}>{tag}</StyledDetail>
-                    ))}
-                  </StyledDetailsContainer>
-                </StyledCard>
-              ))}
-            </ReactCardCarousel>
-          </StyledImagesContainer>
+          <StyledProjectsContainer>
+            {category.items.map((item) => (
+              <StyledCard key={item.link}>
+                <StyledImage src={item.image} alt="" />
+                <StyledDetailsContainer>
+                  <StyledLink
+                    href={item.code}
+                    data-tooltip="view code"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faCode} />
+                  </StyledLink>
+                  <StyledLink
+                    href={item.link}
+                    data-tooltip="view live"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faSearch} />
+                  </StyledLink>
+                </StyledDetailsContainer>
+                <StyledTagContainer>
+                  {item.tags.map((tag) => (
+                    <StyledDetail key={tag}>{tag}</StyledDetail>
+                  ))}
+                </StyledTagContainer>
+              </StyledCard>
+            ))}
+          </StyledProjectsContainer>
         </StyledArticle>
       ))}
       <StyledLine>
