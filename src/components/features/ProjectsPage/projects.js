@@ -1,17 +1,17 @@
-import ang from "./../../../images/ang.png";
-import astronomy from "./../../../images/astronomy.png";
-import cantor from "./../../../images/cantor.png";
-import diet from "./../../../images/diet.png";
-import lansoft from "./../../../images/lansoft.png";
-import letters from "./../../../images/letterts.png";
-import money from "./../../../images/money.png";
-import todo from "./../../../images/todo.png";
-import kissi from "./../../../images/kissi.PNG";
-import budo from "./../../../images/budo.PNG";
-import movies from "./../../../images/movies.PNG";
-import kidsAng from "./../../../images/kidsAng.PNG";
-import hair from "./../../../images/hairdresser.PNG";
-import todoVue from "./../../../images/todoVue.PNG";
+import ang from "./../../../images/angEdit.png";
+import astronomy from "./../../../images/astronomyEdit.png";
+import cantor from "./../../../images/cantorEdit.png";
+import diet from "./../../../images/dietEdit.png";
+import lansoft from "./../../../images/lansoftEdit.png";
+import letters from "./../../../images/lettertsEdit.png";
+import money from "./../../../images/moneyEdit.png";
+import todo from "./../../../images/todoEdit.png";
+import kissi from "./../../../images/kissiEdit.PNG";
+import budo from "./../../../images/budoEdit.PNG";
+import movies from "./../../../images/moviesEdit.PNG";
+import kidsAng from "./../../../images/kidsAngEdit.PNG";
+import hair from "./../../../images/hairdresserEdit.PNG";
+import todoVue from "./../../../images/todoVueEdit.PNG";
 
 
 export const projects = [

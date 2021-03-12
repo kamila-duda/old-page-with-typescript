@@ -22,7 +22,7 @@ export const StyledProjectsContainer = styled.div`
   display: grid;
   height: auto;
   grid-gap: 24px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     grid-template-columns: repeat(2, 1fr);
@@ -47,7 +47,6 @@ export const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: ${({ theme }) => theme.color.secondColor};
   &::before{
   position: absolute;
   display: none;
@@ -56,8 +55,10 @@ export const StyledCard = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: ${({ theme }) => theme.color.fontColor};
+  box-shadow: inset 0 0 30px 25px ${({ theme }) => theme.color.white};
   opacity: 0.5;
+  border-radius: 50px;
 }
     &:hover::before{
       display: block;
@@ -81,18 +82,23 @@ export const StyledGithubLink = styled.a`
   transition: transform 1s;
   color: ${({ theme }) => theme.color.white};
   position: relative;
+  &:hover {
+    color: ${({ theme }) => theme.color.primaryColor};
+  }
   ${({ github }) =>
     github &&
     css`
-      background-color: ${({ theme }) => theme.color.primaryColor};
+      background-color: ${({ theme }) => theme.color.white};
       padding: 10px;
-      border-radius: 15px;
-      color: ${({ theme }) => theme.color.white};
+      border: 3px solid ${({ theme }) => theme.color.primaryColor};
+      border-radius: 50px;
+      color: ${({ theme }) => theme.color.primaryColor};
       display: block;
+      &:hover {
+        color: ${({ theme }) => theme.color.white};
+        background-color: ${({ theme }) => theme.color.primaryColor};
+      }
     `}
-  &:hover {
-    color: ${({ theme }) => theme.color.secondColor};
-  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 15px;
   }
@@ -116,17 +122,21 @@ export const StyledLink = styled(StyledGithubLink)`
   }
 `;
 export const StyledTagContainer = styled.div`
-  min-height: 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 5, 5, 0) 5%,
+    rgba(255, 255, 255, 1) 80%
+  );
 `;
 export const StyledDetail = styled.span`
   border: 2px solid ${({ theme }) => theme.color.primaryColor};
   border-radius: 15px;
   font-size: 10px;
   padding: 5px;
-  margin: 1px;
+  margin: 2px;
   text-align: center;
   background-color: ${({ theme }) => theme.color.white};
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {

@@ -14,7 +14,7 @@ export const StyledSubtitle = styled.h2`
     top: -15%;
     left: -15%;
     z-index: -1;
-    border-radius: 15px;
+    border-radius: 50px;
     @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
       width: 40%;
     }

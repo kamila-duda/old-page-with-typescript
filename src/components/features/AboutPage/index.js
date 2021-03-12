@@ -3,6 +3,7 @@ import Container from "../../common/Container";
 import Subtitle from "../../common/Subtitle";
 import CvContainer from "./CvContainer"
 import {
+  StyledListContainer,
   StyledText,
   StyledList,
   StyledTitle,
@@ -47,24 +48,25 @@ const AboutPage = () => {
       <StyledText ref={componentRef}>{textTyping}</StyledText>
       <CvContainer />
       <Subtitle subtitle={"Skills"} />
-      <StyledList>
+      <StyledListContainer>
+      <StyledList data-aos="fade">
       <StyledTitle>Designing and creating websites: </StyledTitle>
       <li>HTML i CSS (semantic, RWD, Flexbox, BEM)</li>
       <li>SCSS</li>
       <li>JavaScript</li>
       <li>working with API (fetch, axios)</li>
       </StyledList>
-      <StyledList>
+      <StyledList data-aos="fade">
       <StyledTitle>Working with databases:</StyledTitle>
       <li>MySQL (the basic)</li>
       </StyledList>
-      <StyledList>
+      <StyledList data-aos="fade">
       <StyledTitle>Frameworks:</StyledTitle>
       <li>React (React Router, Saga, Redux Toolkit, React Hooks)</li>
       <li>Styled Components</li>
       <li>Bootstrap</li>
       </StyledList>
-      <StyledList>
+      <StyledList data-aos="fade">
       <StyledTitle>Other:</StyledTitle>
       <li>GIT</li>
       <li>Github Pull Request &amp; Review</li>
@@ -72,6 +74,7 @@ const AboutPage = () => {
       <li>Trello</li>
       <li>Markdown</li>
       </StyledList>
+      </StyledListContainer>
     </Container>
   );
 };

@@ -39,12 +39,13 @@ export const StyledLink = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: ${({ theme }) => theme.color.white};
-  background-color: ${({ theme }) => theme.color.secondColor};
+  color: ${({ theme }) => theme.color.primaryColor};
+  background-color: ${({ theme }) => theme.color.white};
   border: 3px solid ${({theme})=>theme.color.primaryColor};
   border-radius: 40px;
   &:hover {
     background-color: ${({ theme }) => theme.color.primaryColor};
+    color: ${({ theme }) => theme.color.white};
     ${StyledFontAwesomeIcon} {
       transform: scale(1.2);
     }

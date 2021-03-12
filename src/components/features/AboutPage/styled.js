@@ -28,12 +28,20 @@ export const StyledText = styled.p`
     font-weight: normal;
   }
 `;
+export const StyledListContainer = styled.div`
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
 export const StyledList = styled.ul`
-  flex-basis: 48%;
+  width: 100%;
   min-height: 200px;
   margin: 8px;
   padding: 8px 8px 8px 40px;
-  align-self: flex-start;
   border: 3px solid ${({ theme }) => theme.color.primaryColor};
   border-radius: 50px;
   background-color: ${({ theme }) => theme.color.white};
