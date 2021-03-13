@@ -28,8 +28,8 @@ const IconsContainer = () => {
   return (
     <StyledWrapperIcons>
       {icons.map((icon) => (
-        <StyledIcon>
-          <StyledFontAwesomeIcon key={icon.iconName} icon={icon} />
+        <StyledIcon key={icon.iconName}>
+          <StyledFontAwesomeIcon  icon={icon} />
         </StyledIcon>
       ))}
     </StyledWrapperIcons>

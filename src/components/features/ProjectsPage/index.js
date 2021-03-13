@@ -14,12 +14,13 @@ import {
   StyledProjectsContainer,
   StyledCard,
   StyledLine,
-  StyledTagContainer
+  StyledTagContainer,
 } from "./styled";
 import { projects } from "./projects";
 import Subtitle from "../../common/Subtitle";
 
 const ProjectsPage = () => {
+
   return (
     <Container>
       <Subtitle subtitle={"Projects"} />
@@ -33,7 +34,7 @@ const ProjectsPage = () => {
           </StyledTextContainer>
           <StyledProjectsContainer>
             {category.items.map((item) => (
-              <StyledCard key={item.link}>
+              <StyledCard key={item.link} data-aos="fade">
                 <StyledImage src={item.image} alt="" />
                 <StyledDetailsContainer>
                   <StyledLink

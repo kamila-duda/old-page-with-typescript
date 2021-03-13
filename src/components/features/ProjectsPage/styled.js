@@ -34,9 +34,13 @@ export const StyledProjectsContainer = styled.div`
 export const StyledDetailsContainer = styled.p`
   position: absolute;
   display: none;
-  width: 100%;
+  width: 60%;
   height: max-content;
+  left: 20%;
   top: 30%;
+  background-color: ${({ theme }) => theme.color.white};
+  border: 3px solid ${({ theme }) => theme.color.primaryColor};
+  border-radius: 50px;
   text-transform: uppercase;
   cursor: pointer;
 `;
@@ -47,23 +51,6 @@ export const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  &::before{
-  position: absolute;
-  display: none;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: ${({ theme }) => theme.color.fontColor};
-  box-shadow: inset 0 0 30px 25px ${({ theme }) => theme.color.white};
-  opacity: 0.5;
-  border-radius: 50px;
-}
-    &:hover::before{
-      display: block;
-    }
-  
     &:hover {
       ${StyledDetailsContainer}{
          display: block;
@@ -105,8 +92,10 @@ export const StyledGithubLink = styled.a`
 `;
 export const StyledLink = styled(StyledGithubLink)`
   font-size: 64px;
+  color: ${({ theme }) => theme.color.primaryColor};
   &:hover {
     transform: scale(1.2);
+    color: ${({ theme }) => theme.color.secondColor};
     &::before {
       content: attr(data-tooltip);
       position: absolute;
