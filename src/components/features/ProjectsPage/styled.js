@@ -109,6 +109,9 @@ export const StyledLink = styled(StyledGithubLink)`
       background-color: ${({ theme }) => theme.color.white};
     }
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 36px;
+  }
 `;
 export const StyledTagContainer = styled.div`
   display: flex;
