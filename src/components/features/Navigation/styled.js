@@ -19,15 +19,9 @@ export const StyledNav = styled.nav`
 export const StyledNavList = styled.ul`
   list-style-type: none;
   display: flex;
+  margin: 0;
   @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     display: none;
-  }
-`;
-export const StyledNavItem = styled.li`
-  padding: 0px 10px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    padding: 15px;
-    font-size: 18px;
   }
 `;
 export const StyledNavLink = styled.a`
@@ -36,21 +30,17 @@ export const StyledNavLink = styled.a`
   text-transform: capitalize;
   color: ${({ theme }) => theme.color.white};
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 70%;
-    height: 2px;
-    left: 15%;
-    bottom: -5px;
-    transform: scaleX(0);
-    transition: transform 1s ease-in-out;
-    background-color: ${({ theme }) => theme.color.primaryColor};
+`;
+export const StyledNavItem = styled.li`
+  padding: 15px 30px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    padding: 15px;
+    font-size: 18px;
   }
   &:hover {
-    &::after {
-      transform: scaleX(1);
+    background-color: ${({ theme }) => theme.color.white};
+    ${StyledNavLink} {
+      color: ${({ theme }) => theme.color.primaryColor};
     }
   }
 `;

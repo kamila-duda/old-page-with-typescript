@@ -16,11 +16,15 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${({ theme }) => theme.color.primaryColor};
     transform: scale(1.2);
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    font-size: 24px;
+  }
 `;
 export const StyledIcon = styled.div`
   width: 50px;
   height: 50px;
   padding: 5px;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,5 +37,13 @@ export const StyledIcon = styled.div`
       color: ${({ theme }) => theme.color.primaryColor};
       transform: scale(1.05);
     }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    width: 40px;
+    height: 40px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    width: 30px;
+    height: 30px;
   }
 `;

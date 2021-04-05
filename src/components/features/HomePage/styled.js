@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledText = styled.h1`
   color: ${({ theme }) => theme.color.fontColor};
-  font-size: 64px;
+  font-size: 52px;
   font-weight: bold;
   margin: 0;
   line-height: 1.4;
@@ -10,6 +10,9 @@ export const StyledText = styled.h1`
     font-size: 48px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    font-size: 40px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 20px;
   }
   ${({ colored }) =>
@@ -40,9 +43,9 @@ export const StyledText = styled.h1`
     `}
 `;
 export const StyledImage = styled.img`
-  height: 90%;
+  width: 50%;
   object-fit: cover;
-  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    height: 60%;
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    width: 100%;
   }
 `;

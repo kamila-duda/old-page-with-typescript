@@ -15,6 +15,9 @@ export const StyledParagraph = styled.p`
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    font-size: 16px;
+  }
 `;
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 20px;

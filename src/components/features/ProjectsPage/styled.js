@@ -109,7 +109,7 @@ export const StyledLink = styled(StyledGithubLink)`
       background-color: ${({ theme }) => theme.color.white};
     }
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     font-size: 36px;
   }
 `;

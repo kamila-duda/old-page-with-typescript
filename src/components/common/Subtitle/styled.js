@@ -25,4 +25,7 @@ export const StyledSubtitle = styled.h2`
       width: 70%;
     }
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+      font-size: 18px;
+    }
 `;
