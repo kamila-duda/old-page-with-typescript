@@ -3,18 +3,19 @@ import styled from "styled-components";
 
 export const StyledContainer = styled.div`
   width: 100%;
+  padding: 20px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 3px solid ${({theme})=>theme.color.secondColor};
-  border-bottom: 3px solid ${({theme})=>theme.color.secondColor};
-  margin-bottom: 60px;
 `;
 export const StyledParagraph = styled.p`
   width: 100%;
+  padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
+  letter-spacing: 2px;
+  color: white;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     font-size: 16px;
   }
@@ -35,19 +36,21 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `;
 export const StyledLink = styled.a`
   font-size: 15px;
-  font-weight: bold;
-  margin: 35px 15px;
+  margin: 5px;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: ${({ theme }) => theme.color.primaryColor};
-  background-color: ${({ theme }) => theme.color.white};
-  border: 3px solid ${({theme})=>theme.color.primaryColor};
+  color: ${({ theme }) => theme.color.darknestWhite};
+  background-color: ${({ diffrentColor, theme }) =>
+    diffrentColor ? theme.color.primaryColor : theme.color.lightPrimaryColor};
+  border: 3px solid
+    ${({ diffrentColor, theme }) =>
+      diffrentColor ? theme.color.primaryColor : theme.color.lightPrimaryColor};
   border-radius: 40px;
   &:hover {
-    background-color: ${({ theme }) => theme.color.primaryColor};
+    border: 3px solid ${({ theme }) => theme.color.darknestWhite};
     color: ${({ theme }) => theme.color.white};
     ${StyledFontAwesomeIcon} {
       transform: scale(1.2);

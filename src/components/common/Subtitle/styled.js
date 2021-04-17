@@ -4,13 +4,16 @@ export const StyledSubtitle = styled.h2`
   width: 100%;
   text-transform: uppercase;
   position: relative;
-  color: ${({ theme }) => theme.color.white};
+  padding: 10px 5px;
+  color: ${({ theme }) => theme.color.secondaryColor};
+  font-size: 36px;
+  z-index: 1;
   &:before {
     content: "";
     position: absolute;
     background-color: ${({ theme }) => theme.color.primaryColor};
     height: 130%;
-    width: 30%;
+    width: 40%;
     top: -15%;
     left: -15%;
     z-index: -1;
@@ -26,6 +29,6 @@ export const StyledSubtitle = styled.h2`
     }
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-      font-size: 18px;
-    }
+    font-size: 18px;
+  }
 `;

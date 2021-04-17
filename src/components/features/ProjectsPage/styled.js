@@ -22,7 +22,7 @@ export const StyledProjectsContainer = styled.div`
   display: grid;
   height: auto;
   grid-gap: 24px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     grid-template-columns: repeat(2, 1fr);
@@ -46,11 +46,13 @@ export const StyledDetailsContainer = styled.p`
 `;
 export const StyledCard = styled.div`
   position: relative;
+  height: 500px;
   margin: 8px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: black;
     &:hover {
       ${StyledDetailsContainer}{
          display: block;
@@ -117,11 +119,8 @@ export const StyledTagContainer = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: linear-gradient(
-    180deg,
-    rgba(5, 5, 5, 0) 5%,
-    rgba(255, 255, 255, 1) 80%
-  );
+  background-color: black;
+  padding: 10px;
 `;
 export const StyledDetail = styled.span`
   border: 2px solid ${({ theme }) => theme.color.primaryColor};

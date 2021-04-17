@@ -1,24 +1,24 @@
 import React from "react";
-import profile from "../../../images/me2.jpg";
-import {
-  StyledImage,
-  StyledText,
-} from "./styled";
+import profile from "../../../images/me.jpg";
+import { StyledImage, StyledText, StyledColoredText } from "./styled";
 import Container from "../../common/Container";
 import IconsContainer from "./IconsContainer";
 
 const HomePage = () => {
   return (
-      <Container homepage={true}>
-        <div>
-          <StyledText colored>Hello world!</StyledText>
-          <StyledText>I am Kamila </StyledText>
-          <StyledText>a passionate</StyledText>
-          <StyledText>Frontend Developer</StyledText>
-          <IconsContainer />
-        </div>
-        <StyledImage src={profile} />
-      </Container>
+    <Container homepage={true}>
+      <div>
+        <StyledColoredText>Hello world!</StyledColoredText>
+        <StyledText>
+          I am Kamila <br />
+          a passionate
+          <br />
+          Frontend Developer
+        </StyledText>
+        <IconsContainer />
+      </div>
+      <StyledImage src={profile} />
+    </Container>
   );
 };
 

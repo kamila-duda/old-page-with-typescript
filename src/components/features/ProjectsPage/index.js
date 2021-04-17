@@ -20,9 +20,8 @@ import { projects } from "./projects";
 import Subtitle from "../../common/Subtitle";
 
 const ProjectsPage = () => {
-
   return (
-    <Container>
+    <Container backgroundColor={"#FFFFFD"} marginTop={"-5%"}>
       <Subtitle subtitle={"Projects"} />
       {projects.map((category) => (
         <StyledArticle key={category.title}>
@@ -35,6 +34,11 @@ const ProjectsPage = () => {
           <StyledProjectsContainer>
             {category.items.map((item) => (
               <StyledCard key={item.link} data-aos="fade">
+                <StyledTagContainer>
+                  {item.tags.map((tag) => (
+                    <StyledDetail key={tag}>{tag}</StyledDetail>
+                  ))}
+                </StyledTagContainer>
                 <StyledImage src={item.image} alt="" />
                 <StyledDetailsContainer>
                   <StyledLink
@@ -52,11 +56,6 @@ const ProjectsPage = () => {
                     <FontAwesomeIcon icon={faSearch} />
                   </StyledLink>
                 </StyledDetailsContainer>
-                <StyledTagContainer>
-                  {item.tags.map((tag) => (
-                    <StyledDetail key={tag}>{tag}</StyledDetail>
-                  ))}
-                </StyledTagContainer>
               </StyledCard>
             ))}
           </StyledProjectsContainer>

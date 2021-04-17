@@ -5,12 +5,11 @@ export const StyledNav = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding: 0;
-  padding-right: 20px;
+  padding: 20px;
   margin: 0;
   position: fixed;
+  top: 0;
   width: 100%;
-  background-color: ${({ theme }) => theme.color.primaryColor};
   z-index: 100;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 0;
@@ -28,19 +27,20 @@ export const StyledNavLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.primaryColor};
   position: relative;
 `;
 export const StyledNavItem = styled.li`
   padding: 15px 30px;
+  letter-spacing: 5px;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 15px;
     font-size: 18px;
   }
   &:hover {
-    background-color: ${({ theme }) => theme.color.white};
+    border-bottom: 1px solid ${({ theme }) => theme.color.lightPrimaryColor};
     ${StyledNavLink} {
-      color: ${({ theme }) => theme.color.primaryColor};
+      color: ${({ theme }) => theme.color.lightPrimaryColor};
     }
   }
 `;

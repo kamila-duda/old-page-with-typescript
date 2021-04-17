@@ -28,6 +28,12 @@ export const StyledIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgb(100, 35, 255);
+  background: linear-gradient(
+    330deg,
+    ${({ theme }) => theme.color.primaryColor} 40%,
+    ${({ theme }) => theme.color.lightPrimaryColor} 100%
+  );
   background-color: ${({ theme }) => theme.color.primaryColor};
   border-radius: 50%;
   &:hover {

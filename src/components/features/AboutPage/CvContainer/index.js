@@ -13,7 +13,7 @@ const CvContainer = () => {
   return (
     <StyledContainer>
       <StyledParagraph>Feel free to download my CV</StyledParagraph>
-      <StyledLink href={CVang} download>
+      <StyledLink href={CVang} download diffrentColor={"true"}>
         English CV
         <StyledFontAwesomeIcon icon={faFilePdf} />
       </StyledLink>

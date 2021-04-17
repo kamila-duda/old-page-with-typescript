@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Navigation from "./components/features/Navigation";
 import HomePage from "./components/features/HomePage";
 import AboutPage from "./components/features/AboutPage";
-import Main from "./components/common/Main";
 import ProjectsPage from "./components/features/ProjectsPage";
 import { ScrollingProvider, Section } from "react-scroll-section";
 import ContactPage from "./components/features/ContactPage";
@@ -19,21 +18,17 @@ function App() {
   return (
     <ScrollingProvider offset={-30}>
       <Navigation />
-      <Main>
-        <UpButton/>
-        <Section id="home">
-          <HomePage />
-        </Section>
-        <Section id="about">
-          <AboutPage />
-        </Section>
-        <Section id="projects">
-          <ProjectsPage />
-        </Section>
-        <Section id="contact">
-          <ContactPage />
-        </Section>
-      </Main>
+      <UpButton />
+      <HomePage />
+      <Section id="about me">
+        <AboutPage />
+      </Section>
+      <Section id="my projects">
+        <ProjectsPage />
+      </Section>
+      <Section id="contact me!">
+        <ContactPage />
+      </Section>
       <Footer />
     </ScrollingProvider>
   );
