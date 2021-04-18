@@ -7,9 +7,12 @@ const Container = ({
   backgroundColor,
   marginTop,
   align,
+  direction,
 }) => {
   return (
-    <StyledContainer {...{ homepage, backgroundColor, marginTop, align }}>
+    <StyledContainer
+      {...{ homepage, backgroundColor, marginTop, align, direction }}
+    >
       {children}
     </StyledContainer>
   );

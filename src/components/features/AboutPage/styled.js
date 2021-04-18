@@ -12,10 +12,9 @@ export const StyledImage = styled.img`
 `;
 export const StyledText = styled.p`
   position: relative;
-  font-family: monospace;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 2;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   min-height: 300px;
   left: 0px;
   text-align: justify;
@@ -80,12 +79,32 @@ export const StyledTitle = styled.h3`
   }
 `;
 export const StyledContent = styled.div`
-  display: ${({ isActive }) => (isActive ? "block" : "none")};
+  height: ${({ height }) => height}px;
+  display: none;
+  ${({ isActive }) =>
+    isActive &&
+    css`
+      display: block;
+      animation: fadeEffect 1s;
+      @keyframes fadeEffect {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    `}
 `;
 export const StyledContentItem = styled.p`
   margin: 5px;
   font-size: 16px;
   color: ${({ theme }) => theme.color.darknestWhite};
   letter-spacing: 1.2px;
-  font-family: monospace;
+`;
+export const StyledDecorationItem = styled.span`
+  display: block;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 `;

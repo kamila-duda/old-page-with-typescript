@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../common/Container";
-import Subtitle from "../../common/Subtitle";
+import Subtitle from "../../common/SectionTitle";
 import CvContainer from "./CvContainer";
 import {
   StyledListItem,
@@ -12,6 +12,7 @@ import {
   StyledImage,
   StyledContent,
   StyledContentItem,
+  StyledDecorationItem,
 } from "./styled";
 import me from "./../../../images/me.png";
 
@@ -22,6 +23,11 @@ const AboutPage = () => {
   const [count, setCount] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const componentRef = useRef(null);
+  const divRef = useRef(null);
+  const [divHeight, setDivHeight] = useState();
+  useEffect(() => {
+    setDivHeight(divRef.current.getBoundingClientRect().height + 50);
+  }, [divRef]);
 
   const onScrollPage = () => {
     if (window.pageYOffset > componentRef.current.offsetTop - 400) {
@@ -87,7 +93,11 @@ const AboutPage = () => {
               Education
             </StyledListItem>
           </StyledList>
-          <StyledContent isActive={activeTab === "skills"}>
+          <StyledContent
+            isActive={activeTab === "skills"}
+            ref={divRef}
+            height={divHeight}
+          >
             <StyledTitle>
               Technology Stack for Web Application Development:
             </StyledTitle>
@@ -112,6 +122,41 @@ const AboutPage = () => {
             <StyledContentItem>Scrum</StyledContentItem>
             <StyledContentItem>Trello, Jira</StyledContentItem>
             <StyledContentItem>Markdown</StyledContentItem>
+          </StyledContent>
+          <StyledContent isActive={activeTab === "experience"}>
+            <StyledTitle>march 2021 - now:</StyledTitle>
+            <StyledContentItem>
+              <StyledDecorationItem>Dev and Deliver</StyledDecorationItem>
+              Junior Frontend Developer
+            </StyledContentItem>
+          </StyledContent>
+          <StyledContent isActive={activeTab === "education"}>
+            <StyledTitle>2010-2015:</StyledTitle>
+            <StyledContentItem>
+              <StyledDecorationItem>
+                Czestochowa University of Technology
+              </StyledDecorationItem>
+              PhD studies, Faculty Of Production Engineering And Materials
+              Technology, Major: Foundry.
+            </StyledContentItem>
+            <StyledTitle>2009-2010:</StyledTitle>
+            <StyledContentItem>
+              <StyledDecorationItem>
+                Silesian University of Technology
+              </StyledDecorationItem>
+              Masters degree, Faculty: Materials Science and Metallurgy, Major:
+              Management and Production Engineering, Specialty: Health and
+              Safety.
+            </StyledContentItem>
+            <StyledTitle>2005-2009:</StyledTitle>
+            <StyledContentItem>
+              <StyledDecorationItem>
+                Czestochowa University of Technology
+              </StyledDecorationItem>
+              Engineer degree, Faculty Of Production Engineering And Materials
+              Technology, Major: Management and Production Engineering,
+              Specialization: Foundry Production Engineering.
+            </StyledContentItem>
           </StyledContent>
         </StyledWrapper>
       </Container>

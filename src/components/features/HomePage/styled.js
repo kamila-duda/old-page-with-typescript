@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledText = styled.h1`
   top: 200px;
@@ -43,14 +43,13 @@ export const StyledColoredText = styled.h2`
     }
   }
 `;
-
 export const StyledImage = styled.img`
   position: relative;
   width: 500px;
   height: 500px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 10px 10px 30px 0px ${({ theme }) => theme.color.primaryColor}59;
+  box-shadow: 10px 10px 30px 0px ${({ theme }) => theme.color.primaryColor}24;
   @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     width: 100%;
   }

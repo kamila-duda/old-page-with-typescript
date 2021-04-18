@@ -9,6 +9,7 @@ import Footer from "./components/features/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import UpButton from "./components/common/UpButton";
+import Main from "./components/common/Main";
 
 function App() {
   useEffect(() => {
@@ -19,16 +20,19 @@ function App() {
     <ScrollingProvider offset={-30}>
       <Navigation />
       <UpButton />
-      <HomePage />
-      <Section id="about me">
-        <AboutPage />
-      </Section>
-      <Section id="my projects">
-        <ProjectsPage />
-      </Section>
-      <Section id="contact me!">
-        <ContactPage />
-      </Section>
+
+      <Main>
+        <HomePage />
+        <Section id="about me">
+          <AboutPage />
+        </Section>
+        <Section id="my projects">
+          <ProjectsPage />
+        </Section>
+        <Section id="contact me!">
+          <ContactPage />
+        </Section>
+      </Main>
       <Footer />
     </ScrollingProvider>
   );

@@ -6,7 +6,7 @@ export const theme = {
     lightPrimaryColor: "#CF5FE4",
     lighterPrimaryColor: "#ec9bfc",
     secondColor: "#25293E",
-    darknestWhite: "#FFFFFE",
+    darknestWhite: "#FFFFFA",
     white: "#FFFFFF",
   },
   breakpoint: {

@@ -12,8 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 body{
   background-color: ${({ theme }) => theme.color.white};
   background-size: 15%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 `;

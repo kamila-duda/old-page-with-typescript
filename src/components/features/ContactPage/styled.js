@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const StyledLine = styled.p`
   width: 100%;
+  margin: 0;
+  font-size: 20px;
+  color: ${({ theme }) => theme.color.white};
   text-align: center;
 `;
 export const StyledContainer = styled.div`
@@ -12,18 +15,31 @@ export const StyledContainer = styled.div`
 `;
 export const StyledLink = styled.a`
   font-size: 40px;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   margin: 20px;
-  border: 3px solid ${({ theme }) => theme.color.secondColor};
+  color: ${({ theme }) => theme.color.white};
   border-radius: 50%;
-  color: ${({ theme }) => theme.color.secondColor};
+  background: linear-gradient(
+    330deg,
+    ${({ theme }) => theme.color.primaryColor} 40%,
+    ${({ theme }) => theme.color.lightPrimaryColor} 100%
+  );
   &:hover {
-    color: ${({ theme }) => theme.color.primaryColor};
-      border: 3px solid ${({ theme }) => theme.color.primaryColor};
-    }
+    border: 3px solid ${({ theme }) => theme.color.white};
+  }
+`;
+export const StyledImage = styled.img`
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    width: 100%;
+  }
 `;

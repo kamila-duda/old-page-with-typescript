@@ -1,29 +1,37 @@
 import React from "react";
 import Container from "../../common/Container";
-import {
-  StyledLine,
-  StyledContainer,
-  StyledLink,
-} from "./styled";
+import { StyledLine, StyledContainer, StyledLink, StyledImage } from "./styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Subtitle from "../../common/Subtitle";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import SectionTitle from "../../common/SectionTitle";
+import profile from "../../../images/me.jpg";
 
 const ContactPage = () => {
   return (
-    <Container>
-      <Subtitle subtitle={"Contact"} />
-      <StyledLine>You can contact with me by:</StyledLine>
+    <Container
+      backgroundColor={"#25293E"}
+      marginTop={"-5%"}
+      direction={"column"}
+    >
+      <SectionTitle sectionTitle={"Contact"} color={"#FFFFFF"} />
+      <StyledImage src={profile} />
+      <StyledLine>
+        Let's stay in touch <br />
+        You can contact with me by:
+      </StyledLine>
       <StyledContainer>
         <StyledLink href="mailto: kamiladuda@int.pl">
-          <FontAwesomeIcon icon={faEnvelopeSquare} />
+          <FontAwesomeIcon icon={faAt} />
         </StyledLink>
-        <StyledLink href="https://www.linkedin.com/in/kamila-duda" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} />
+        <StyledLink
+          href="https://www.linkedin.com/in/kamila-duda"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} />
         </StyledLink>
         <StyledLink href="https://github.com/kamila-duda" target="_blank">
-          <FontAwesomeIcon icon={faGithubSquare} />
+          <FontAwesomeIcon icon={faGithub} />
         </StyledLink>
       </StyledContainer>
     </Container>

@@ -34,36 +34,77 @@ export const StyledProjectsContainer = styled.div`
 export const StyledDetailsContainer = styled.p`
   position: absolute;
   display: none;
-  width: 60%;
-  height: max-content;
-  left: 20%;
-  top: 30%;
-  background-color: ${({ theme }) => theme.color.white};
-  border: 3px solid ${({ theme }) => theme.color.primaryColor};
-  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  background: linear-gradient(
+    329deg,
+    rgba(100, 35, 255, 0.6731734930300245) 40%,
+    rgba(207, 95, 228, 0.6423611681000525) 100%
+  );
+  border-radius: 15px;
   text-transform: uppercase;
   cursor: pointer;
 `;
 export const StyledCard = styled.div`
   position: relative;
-  height: 500px;
-  margin: 8px;
+  width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: black;
-    &:hover {
-      ${StyledDetailsContainer}{
-         display: block;
-      }
-   }
+  margin: 8px;
+  border-radius: 15px;
+  background-color: ${({ theme }) => theme.color.white};
+  box-shadow: 0px 0px 25px 0px #e4e4e4;
+  &:hover {
+    ${StyledDetailsContainer} {
+      display: block;
+    }
   }
 `;
+export const StyledCardImage = styled.div`
+  position: relative;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: ${({ theme }) => theme.color.white};
+  text-transform: uppercase;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 30%);
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 12px;
+    ${({ image }) =>
+      image &&
+      css`
+        background-image: url(${image});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    width: 120px;
+    height: 100px;
+    font-size: 13px;
+  }
+`;
+
 export const StyledImage = styled.img`
   display: block;
-  width: 100%;
+  width: 90%;
   object-fit: contain;
+  border-radius: 50px;
 `;
 export const StyledGithubLink = styled.a`
   margin: 5px 15px;
@@ -71,21 +112,21 @@ export const StyledGithubLink = styled.a`
   transition: transform 1s;
   color: ${({ theme }) => theme.color.white};
   position: relative;
-  &:hover {
-    color: ${({ theme }) => theme.color.primaryColor};
-  }
   ${({ github }) =>
     github &&
     css`
-      background-color: ${({ theme }) => theme.color.white};
-      padding: 10px;
-      border: 3px solid ${({ theme }) => theme.color.primaryColor};
+      background: linear-gradient(
+        330deg,
+        ${({ theme }) => theme.color.primaryColor} 40%,
+        ${({ theme }) => theme.color.lightPrimaryColor} 100%
+      );
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 3px solid ${({ theme }) => theme.color.white};
       border-radius: 50px;
-      color: ${({ theme }) => theme.color.primaryColor};
       display: block;
       &:hover {
-        color: ${({ theme }) => theme.color.white};
-        background-color: ${({ theme }) => theme.color.primaryColor};
+        background: ${({ theme }) => theme.color.primaryColor};
       }
     `}
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
@@ -93,23 +134,23 @@ export const StyledGithubLink = styled.a`
   }
 `;
 export const StyledLink = styled(StyledGithubLink)`
-  font-size: 64px;
-  color: ${({ theme }) => theme.color.primaryColor};
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: ${({ theme }) => theme.color.darknestWhite};
+  font-size: 56px;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  :first-of-type {
+    left: 20%;
+  }
   &:hover {
     transform: scale(1.2);
-    color: ${({ theme }) => theme.color.secondColor};
-    &::before {
-      content: attr(data-tooltip);
-      position: absolute;
-      font-size: 12px;
-      text-align: center;
-      width: 200%;
-      left: -50%;
-      top: -15px;
-      border: 1px solid ${({ theme }) => theme.color.primaryColor};
-      border-radius: 15px;
-      background-color: ${({ theme }) => theme.color.white};
-    }
+    color: ${({ theme }) => theme.color.darknestWhite};
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     font-size: 36px;
@@ -117,23 +158,35 @@ export const StyledLink = styled(StyledGithubLink)`
 `;
 export const StyledTagContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
-  background-color: black;
   padding: 10px;
 `;
 export const StyledDetail = styled.span`
-  border: 2px solid ${({ theme }) => theme.color.primaryColor};
-  border-radius: 15px;
-  font-size: 10px;
+  position: relative;
+  font-size: 14px;
   padding: 5px;
   margin: 2px;
   text-align: center;
-  background-color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.secondColor};
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 2px;
     margin: 1px;
     border: 1px solid ${({ theme }) => theme.color.primaryColor};
+  }
+  &::after {
+    position: absolute;
+    content: "/";
+    color: ${({ theme }) => theme.color.lighterPrimaryColor};
+    top: 5px;
+    right: -5px;
+    height: 100%;
+  }
+  :last-of-type {
+    &::after {
+      display: none;
+    }
   }
 `;
 export const StyledLine = styled.p`
@@ -142,4 +195,7 @@ export const StyledLine = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 15px;
   }
+`;
+export const StyledName = styled.h4`
+  text-transform: capitalize;
 `;

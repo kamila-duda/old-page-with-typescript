@@ -4,7 +4,7 @@ export const StyledNav = styled.nav`
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 20px;
   margin: 0;
   position: fixed;
@@ -13,6 +13,31 @@ export const StyledNav = styled.nav`
   z-index: 100;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 0;
+  }
+`;
+export const StyledIconWrapper = styled.div`
+  display: flex;
+`;
+export const StyledLink = styled.a`
+  font-size: 26px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 10px;
+  color: ${({ theme }) => theme.color.primaryColor};
+  border-radius: 50%;
+  border: 1px solid ${({ theme }) => theme.color.primaryColor};
+  &:hover {
+    color: ${({ theme }) => theme.color.white};
+    background: linear-gradient(
+      330deg,
+      ${({ theme }) => theme.color.primaryColor} 40%,
+      ${({ theme }) => theme.color.lightPrimaryColor} 100%
+    );
+    border: 3px solid ${({ theme }) => theme.color.white};
   }
 `;
 export const StyledNavList = styled.ul`
