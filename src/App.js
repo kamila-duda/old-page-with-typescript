@@ -20,19 +20,16 @@ function App() {
     <ScrollingProvider offset={-30}>
       <Navigation />
       <UpButton />
-
-      <Main>
-        <HomePage />
-        <Section id="about me">
-          <AboutPage />
-        </Section>
-        <Section id="my projects">
-          <ProjectsPage />
-        </Section>
-        <Section id="contact me!">
-          <ContactPage />
-        </Section>
-      </Main>
+      <HomePage />
+      <Section id="about me">
+        <AboutPage />
+      </Section>
+      <Section id="my projects">
+        <ProjectsPage />
+      </Section>
+      <Section id="contact me!">
+        <ContactPage />
+      </Section>
       <Footer />
     </ScrollingProvider>
   );

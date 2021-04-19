@@ -1,11 +1,13 @@
 import React from "react";
-import { StyledFooter, StyledText } from "./styled";
+import { StyledFooter, StyledText, StyledWrapper } from "./styled";
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledText>Copyright 2021 © All rights reserved.</StyledText>
-      <StyledText>designed by Kamila Duda</StyledText>
+      <StyledWrapper>
+        <StyledText>Copyright 2021 © All rights reserved.</StyledText>
+        <StyledText>designed by Kamila Duda</StyledText>
+      </StyledWrapper>
     </StyledFooter>
   );
 };

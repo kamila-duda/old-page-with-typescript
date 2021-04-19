@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledContainer } from "./styled";
+import { StyledContainer, StyledWrapper } from "./styled";
 
 const Container = ({
   children,
@@ -10,10 +10,11 @@ const Container = ({
   direction,
 }) => {
   return (
-    <StyledContainer
-      {...{ homepage, backgroundColor, marginTop, align, direction }}
+    <StyledContainer {...{  backgroundColor, marginTop}}
     >
+      <StyledWrapper {...{ homepage, align, direction }}>
       {children}
+      </StyledWrapper>
     </StyledContainer>
   );
 };

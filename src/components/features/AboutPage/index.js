@@ -64,7 +64,7 @@ const AboutPage = () => {
     <>
       <Container
         backgroundColor={"#25293E"}
-        marginTop={"100vh"}
+        marginTop={"5%"}
         align={"flex-start"}
       >
         <StyledImageWrapper>
