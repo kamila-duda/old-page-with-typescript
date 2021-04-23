@@ -6,8 +6,14 @@ export const StyledFooter = styled.footer`
   width: 100%;
   margin: -5% auto;
   border-radius: 50px 50px 0 0;
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    border-radius: 25px 25px 0 0;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    margin: -15% auto;
+  }
 `;
-export const StyledWrapper = styled.footer`
+export const StyledWrapper = styled.div`
   padding: 20px;
   max-width: 1400px;
   margin: auto;
@@ -15,7 +21,7 @@ export const StyledWrapper = styled.footer`
   flex-wrap: wrap;
   justify-content: space-between;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 export const StyledText = styled.p`
@@ -24,4 +30,7 @@ export const StyledText = styled.p`
   letter-spacing: 2px;
   margin: 0;
   color: ${({ theme }) => theme.color.white};
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 12px;
+  }
 `;

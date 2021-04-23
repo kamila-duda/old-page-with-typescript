@@ -6,19 +6,17 @@ export const StyledContainer = styled.div`
   min-height: 100vh;
   border-radius: 70px 70px 0% 0%;
   margin-top: ${(props) => props.marginTop};
-  margin-left: auto;
-  margin-right: auto;
   background: ${(props) => props.backgroundColor};
   padding-bottom: 40px;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 25px 25px 0% 0%;
   }
 `;
 export const StyledWrapper = styled.div`
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
-  position: relative;
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;
@@ -26,11 +24,17 @@ export const StyledWrapper = styled.div`
   justify-content: space-around;
   align-items: ${({ align }) => (align ? align : "center")};
   padding: 40px 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    padding: 5px;
+    flex-direction: column;
+  }
   ${({ homepage }) =>
     homepage &&
     css`
       font-family: "Montserrat", sans-serif;
       position: fixed;
+      width: 100%;
       top: 0;
       left: 0;
       right: 0;
@@ -38,10 +42,9 @@ export const StyledWrapper = styled.div`
       flex-wrap: nowrap;
       z-index: -1;
       @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+        padding-top: 100px;
         flex-wrap: wrap;
+        justify-content: flex-start;
       }
     `}
-  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    padding: 5px;
-  }
 `;

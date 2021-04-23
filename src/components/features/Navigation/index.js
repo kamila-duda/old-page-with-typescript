@@ -55,8 +55,8 @@ const Navigation = () => {
           </StyledNavItem>
         ))}
         <StyledIcon onClick={() => setIsOpen(!isOpen)}>
-          <FontAwesomeIcon icon={faCode} />
-        </StyledIcon>
+        <FontAwesomeIcon icon={faCode} />
+      </StyledIcon>
       </StyledNavListMobile>
     </StyledNav>
   );

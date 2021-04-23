@@ -18,12 +18,6 @@ export const StyledText = styled.h1`
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 20px;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
-    font-size: 36px;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    font-size: 10px;
-  }
 `;
 export const StyledColoredText = styled.h2`
   color: ${({ theme }) => theme.color.lightPrimaryColor};
@@ -42,6 +36,12 @@ export const StyledColoredText = styled.h2`
       }
     }
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
+    font-size: 28px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    font-size: 10px;
+  }
 `;
 export const StyledImage = styled.img`
   position: relative;
@@ -51,6 +51,10 @@ export const StyledImage = styled.img`
   object-fit: cover;
   box-shadow: 10px 10px 30px 0px ${({ theme }) => theme.color.primaryColor}24;
   @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
-    width: 100%;
+    width: 80%;
+    height: 80%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    margin-top: 20px;
   }
 `;

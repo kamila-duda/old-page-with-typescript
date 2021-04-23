@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <ScrollingProvider offset={-30}>
+    <ScrollingProvider offset={-50}>
       <Navigation />
       <UpButton />
       <HomePage />

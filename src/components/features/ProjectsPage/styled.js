@@ -94,8 +94,6 @@ export const StyledCardImage = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    width: 120px;
-    height: 100px;
     font-size: 13px;
   }
 `;
@@ -152,9 +150,6 @@ export const StyledLink = styled(StyledGithubLink)`
     transform: scale(1.2);
     color: ${({ theme }) => theme.color.darknestWhite};
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    font-size: 36px;
-  }
 `;
 export const StyledTagContainer = styled.div`
   display: flex;
@@ -172,16 +167,20 @@ export const StyledDetail = styled.span`
   color: ${({ theme }) => theme.color.secondColor};
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 2px;
-    margin: 1px;
-    border: 1px solid ${({ theme }) => theme.color.primaryColor};
+    margin: 5px;
   }
   &::after {
     position: absolute;
     content: "/";
+    margin: 2px;
     color: ${({ theme }) => theme.color.lighterPrimaryColor};
     top: 5px;
     right: -5px;
     height: 100%;
+    @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+      top: 0;
+      right: -10px;
+    }
   }
   :last-of-type {
     &::after {

@@ -17,7 +17,7 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     transform: scale(1.2);
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 export const StyledIcon = styled.div`

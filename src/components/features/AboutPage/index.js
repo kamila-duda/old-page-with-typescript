@@ -123,14 +123,20 @@ const AboutPage = () => {
             <StyledContentItem>Trello, Jira</StyledContentItem>
             <StyledContentItem>Markdown</StyledContentItem>
           </StyledContent>
-          <StyledContent isActive={activeTab === "experience"}>
+          <StyledContent
+            isActive={activeTab === "experience"}
+            height={divHeight}
+          >
             <StyledTitle>march 2021 - now:</StyledTitle>
             <StyledContentItem>
               <StyledDecorationItem>Dev and Deliver</StyledDecorationItem>
               Junior Frontend Developer
             </StyledContentItem>
           </StyledContent>
-          <StyledContent isActive={activeTab === "education"}>
+          <StyledContent
+            isActive={activeTab === "education"}
+            height={divHeight}
+          >
             <StyledTitle>2010-2015:</StyledTitle>
             <StyledContentItem>
               <StyledDecorationItem>

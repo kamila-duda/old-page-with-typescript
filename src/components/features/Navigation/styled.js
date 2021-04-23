@@ -5,18 +5,20 @@ export const StyledNav = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0;
   margin: 0;
   position: fixed;
+  left: 0;
   top: 0;
-  width: 100%;
+  right: 0;
   z-index: 100;
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    padding: 0;
-  }
 `;
 export const StyledIconWrapper = styled.div`
   display: flex;
+  padding: 20px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    padding: 0;
+  }
 `;
 export const StyledLink = styled.a`
   font-size: 26px;
@@ -28,6 +30,7 @@ export const StyledLink = styled.a`
   text-decoration: none;
   margin: 10px;
   color: ${({ theme }) => theme.color.primaryColor};
+  background-color: ${({ theme }) => theme.color.white};
   border-radius: 50%;
   border: 1px solid ${({ theme }) => theme.color.primaryColor};
   &:hover {
@@ -39,11 +42,20 @@ export const StyledLink = styled.a`
     );
     border: 3px solid ${({ theme }) => theme.color.white};
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    margin: 5px;
+  }
 `;
 export const StyledNavList = styled.ul`
   list-style-type: none;
   display: flex;
   margin: 0;
+  padding: 20px;
+  border-radius: 0 0 0 70px;
+  background-color: ${({ theme }) => theme.color.white};
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    padding: 0;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     display: none;
   }
@@ -59,7 +71,7 @@ export const StyledNavItem = styled.li`
   padding: 15px 30px;
   letter-spacing: 5px;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    padding: 15px;
+    padding: 40px;
     font-size: 18px;
   }
   &:hover {
@@ -73,11 +85,14 @@ export const StyledIcon = styled.div`
   position: absolute;
   top: 0px;
   right: 10px;
-  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
   padding: 10px;
   margin: 5px;
   border: 1px solid ${({ theme }) => theme.color.primaryColor};
   border-radius: 50px;
+  background-color: ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.primaryColor};
 `;
 export const StyledNavListMobile = styled.ul`
@@ -87,15 +102,15 @@ export const StyledNavListMobile = styled.ul`
   align-items: center;
   padding: 0;
   width: 100%;
-  margin: -218px 0 0;
+  margin: -400px 0 0px;
   ${({ open }) =>
     open &&
     css`
       margin: 0;
-      width: 99%;
+      background-color: ${({ theme }) => theme.color.white};
       ${StyledIcon} {
-        border: 1px solid ${({ theme }) => theme.color.white};
-        color: ${({ theme }) => theme.color.white};
+        border: 1px solid ${({ theme }) => theme.color.primaryColor};
+        color: ${({ theme }) => theme.color.primaryColor};
       }
     `}
   @media (min-width: ${({ theme }) => theme.breakpoint.another}) {

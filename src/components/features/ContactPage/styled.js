@@ -32,6 +32,11 @@ export const StyledLink = styled.a`
   &:hover {
     border: 3px solid ${({ theme }) => theme.color.white};
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const StyledImage = styled.img`
   position: relative;
@@ -39,7 +44,4 @@ export const StyledImage = styled.img`
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
-    width: 100%;
-  }
 `;
