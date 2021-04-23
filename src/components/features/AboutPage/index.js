@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../common/Container";
-import Subtitle from "../../common/SectionTitle";
 import CvContainer from "./CvContainer";
 import {
   StyledListItem,

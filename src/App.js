@@ -9,7 +9,6 @@ import Footer from "./components/features/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import UpButton from "./components/common/UpButton";
-import Main from "./components/common/Main";
 
 function App() {
   useEffect(() => {
