@@ -25,7 +25,7 @@ const AboutPage = () => {
   const divRef = useRef(null);
   const [divHeight, setDivHeight] = useState();
   useEffect(() => {
-    setDivHeight(divRef.current.getBoundingClientRect().height + 50);
+    setDivHeight(divRef.current.getBoundingClientRect().height + 80);
   }, [divRef]);
 
   const onScrollPage = () => {
@@ -107,6 +107,9 @@ const AboutPage = () => {
             <StyledContentItem>
               React (React Router, Saga, Redux Toolkit, React Hooks)
             </StyledContentItem>
+            <StyledContentItem>TypeScript</StyledContentItem>
+            <StyledContentItem>Next.js</StyledContentItem>
+            <StyledContentItem>Vue.js</StyledContentItem>
             <StyledContentItem>Styled Components</StyledContentItem>
             <StyledContentItem>Bootstrap</StyledContentItem>
             <StyledContentItem>

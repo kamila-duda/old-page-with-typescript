@@ -132,4 +132,7 @@ export const StyledDecorationItem = styled.span`
   font-size: 20px;
   padding-bottom: 5px;
   text-transform: uppercase;
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 14px;
+  }
 `;
