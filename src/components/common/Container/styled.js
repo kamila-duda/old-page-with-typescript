@@ -23,7 +23,7 @@ export const StyledWrapper = styled.div`
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
   justify-content: space-around;
   align-items: ${({ align }) => (align ? align : "center")};
-  padding: 40px 10px 80px;
+  padding: 80px 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     padding: 5px;

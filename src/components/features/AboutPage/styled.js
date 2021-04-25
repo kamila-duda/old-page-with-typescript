@@ -12,13 +12,14 @@ export const StyledImageWrapper = styled.div`
 export const StyledImage = styled.img`
   width: 100%;
   object-fit: contain;
-  border-radius: 50px;
+  border-radius: 25px;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     display: none;
   }
 `;
 export const StyledText = styled.p`
   position: relative;
+  margin: 0 0 30px;
   font-size: 20px;
   line-height: 2;
   letter-spacing: 2px;
@@ -39,10 +40,12 @@ export const StyledText = styled.p`
       opacity: 0;
     }
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    padding: 10px;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 16px;
     font-weight: normal;
-    margin-bottom: 30px;
   }
 `;
 export const StyledWrapper = styled.div`
@@ -69,6 +72,7 @@ export const StyledList = styled.ul`
 export const StyledListItem = styled.li`
   width: 33%;
   padding-bottom: 10px;
+  text-transform: uppercase;
   text-align: center;
   font-size: 22px;
   border-bottom: 1px solid transparent;
@@ -102,6 +106,7 @@ export const StyledTitle = styled.h3`
 `;
 export const StyledContent = styled.div`
   height: ${({ height }) => height}px;
+  padding: 10px;
   display: none;
   ${({ isActive }) =>
     isActive &&
@@ -119,7 +124,7 @@ export const StyledContent = styled.div`
     `}
 `;
 export const StyledContentItem = styled.p`
-  margin: 5px;
+  margin: 5px 0;
   font-size: 16px;
   color: ${({ theme }) => theme.color.darknestWhite};
   letter-spacing: 1.2px;
