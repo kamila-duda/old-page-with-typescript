@@ -45,8 +45,8 @@ export const StyledColoredText = styled.h2`
 `;
 export const StyledImage = styled.img`
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 68vh;
+  height: 68vh;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 10px 10px 30px 0px ${({ theme }) => theme.color.primaryColor}24;

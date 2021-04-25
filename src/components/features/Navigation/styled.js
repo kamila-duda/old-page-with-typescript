@@ -15,15 +15,12 @@ export const StyledNav = styled.nav`
 `;
 export const StyledIconWrapper = styled.div`
   display: flex;
-  padding: 20px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    padding: 0;
-  }
+  padding: 0px;
 `;
 export const StyledLink = styled.a`
-  font-size: 26px;
-  width: 45px;
-  height: 45px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,8 +47,8 @@ export const StyledNavList = styled.ul`
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 20px;
-  border-radius: 0 0 0 70px;
+  padding: 10px;
+  border-radius: 0 0 0 50px;
   background-color: ${({ theme }) => theme.color.white};
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     padding: 0;
@@ -69,6 +66,7 @@ export const StyledNavLink = styled.a`
 `;
 export const StyledNavItem = styled.li`
   padding: 15px 30px;
+  font-size: 12px;
   letter-spacing: 5px;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 40px;
