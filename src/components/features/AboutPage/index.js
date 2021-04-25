@@ -13,7 +13,7 @@ import {
   StyledContentItem,
   StyledDecorationItem,
 } from "./styled";
-import me from "./../../../images/me.png";
+import me from "./../../../images/me3.jpg";
 
 const AboutPage = () => {
   const textToShow =
