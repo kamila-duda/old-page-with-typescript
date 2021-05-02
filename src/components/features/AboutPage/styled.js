@@ -20,8 +20,9 @@ export const StyledImage = styled.img`
 export const StyledText = styled.p`
   position: relative;
   margin: 0 0 30px;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 2.5;
   letter-spacing: 2px;
   min-height: 300px;
   left: 0px;
@@ -43,10 +44,10 @@ export const StyledText = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     padding: 10px;
     letter-spacing: 1px;
+    line-height: 2;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 16px;
-    font-weight: normal;
     letter-spacing: 0px;
   }
 `;

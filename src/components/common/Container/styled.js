@@ -17,7 +17,7 @@ export const StyledWrapper = styled.div`
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
   flex-wrap: wrap;
   flex-direction: ${({ direction }) => (direction ? direction : "row")};

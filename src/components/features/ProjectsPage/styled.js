@@ -138,7 +138,7 @@ export const StyledLink = styled(StyledGithubLink)`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: ${({ theme }) => theme.color.darknestWhite};
+  color: ${({ theme }) => theme.color.white};
   font-size: 56px;
   position: absolute;
   left: 50%;
@@ -148,7 +148,6 @@ export const StyledLink = styled(StyledGithubLink)`
   }
   &:hover {
     transform: scale(1.2);
-    color: ${({ theme }) => theme.color.darknestWhite};
   }
 `;
 export const StyledTagContainer = styled.div`
@@ -191,6 +190,7 @@ export const StyledDetail = styled.span`
 export const StyledLine = styled.p`
   font-weight: bold;
   text-align: center;
+  margin: 10px auto;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 15px;
   }
