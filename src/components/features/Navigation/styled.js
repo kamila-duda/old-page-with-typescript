@@ -19,8 +19,8 @@ export const StyledIconWrapper = styled.div`
 `;
 export const StyledLink = styled.a`
   font-size: 20px;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,9 +65,11 @@ export const StyledNavLink = styled.a`
   position: relative;
 `;
 export const StyledNavItem = styled.li`
+  position: relative;
   padding: 15px 30px;
   font-size: 12px;
   letter-spacing: 5px;
+  text-align: center;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 40px;
     font-size: 18px;

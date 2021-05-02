@@ -9,7 +9,7 @@ export const StyledContainer = styled.div`
   background: ${(props) => props.backgroundColor};
   padding-bottom: 40px;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 25px 25px 0% 0%;
   }
 `;
@@ -21,13 +21,14 @@ export const StyledWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: ${({ align }) => (align ? align : "center")};
-  padding: 80px 10px;
+  padding: 80px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     padding: 5px;
     flex-direction: column;
+    justify-content: space-around;
   }
   ${({ homepage }) =>
     homepage &&

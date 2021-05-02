@@ -7,6 +7,9 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    padding: 70px 10px;
+  }
 `;
 export const StyledParagraph = styled.p`
   width: 100%;

@@ -11,10 +11,10 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 50px;
 `;
 export const StyledLink = styled.a`
-  font-size: 40px;
+  font-size: 36px;
   width: 80px;
   height: 80px;
   display: flex;
@@ -32,10 +32,16 @@ export const StyledLink = styled.a`
   &:hover {
     border: 3px solid ${({ theme }) => theme.color.white};
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     font-size: 28px;
     width: 50px;
     height: 50px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
   }
 `;
 export const StyledImage = styled.img`

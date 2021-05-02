@@ -20,7 +20,7 @@ export const StyledImage = styled.img`
 export const StyledText = styled.p`
   position: relative;
   margin: 0 0 30px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 2px;
   min-height: 300px;
@@ -42,10 +42,12 @@ export const StyledText = styled.p`
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     padding: 10px;
+    letter-spacing: 1px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 16px;
     font-weight: normal;
+    letter-spacing: 0px;
   }
 `;
 export const StyledWrapper = styled.div`
@@ -90,10 +92,16 @@ export const StyledListItem = styled.li`
     padding: 10px;
     background-color: ${({ theme }) => theme.color.lighterPrimaryColor};
     border-radius: 25px 25px 0 0;
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
     ${({ isActive }) =>
       isActive &&
       css`
         background-color: ${({ theme }) => theme.color.primaryColor};
+        &:hover {
+          border-bottom: 1px solid transparent;
+        }
       `}
   }
 `;
@@ -122,6 +130,9 @@ export const StyledContent = styled.div`
         }
       }
     `}
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    padding: 20px 10px;
+  }
 `;
 export const StyledContentItem = styled.p`
   margin: 5px 0;
@@ -129,7 +140,8 @@ export const StyledContentItem = styled.p`
   color: ${({ theme }) => theme.color.darknestWhite};
   letter-spacing: 1.2px;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 `;
 export const StyledDecorationItem = styled.span`
