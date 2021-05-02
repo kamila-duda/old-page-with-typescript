@@ -41,6 +41,7 @@ export const StyledWrapper = styled.div`
       right: 0;
       padding: 4% 2%;
       flex-wrap: nowrap;
+      justify-content: space-around;
       z-index: -1;
       @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
         padding-top: 100px;
