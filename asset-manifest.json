@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.ad818acc.chunk.js",
-    "main.js.map": "/static/js/main.ad818acc.chunk.js.map",
+    "main.js": "/static/js/main.64827143.chunk.js",
+    "main.js.map": "/static/js/main.64827143.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d7d1311.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d7d1311.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.1dd535d7.chunk.js": "/static/js/2.1dd535d7.chunk.js",
-    "static/js/2.1dd535d7.chunk.js.map": "/static/js/2.1dd535d7.chunk.js.map",
+    "static/js/2.0df76688.chunk.js": "/static/js/2.0df76688.chunk.js",
+    "static/js/2.0df76688.chunk.js.map": "/static/js/2.0df76688.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.db11fd5bea2c9c6e1ba6641958ec25cb.js": "/precache-manifest.db11fd5bea2c9c6e1ba6641958ec25cb.js",
+    "precache-manifest.bc75810fa5a032b0c9a5079cfbb2a887.js": "/precache-manifest.bc75810fa5a032b0c9a5079cfbb2a887.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/js/2.1dd535d7.chunk.js.LICENSE.txt": "/static/js/2.1dd535d7.chunk.js.LICENSE.txt",
+    "static/js/2.0df76688.chunk.js.LICENSE.txt": "/static/js/2.0df76688.chunk.js.LICENSE.txt",
     "static/media/Kamila Duda_CV_ANG.pdf": "/static/media/Kamila Duda_CV_ANG.93ca1856.pdf",
     "static/media/Kamila Duda_CV_PL.pdf": "/static/media/Kamila Duda_CV_PL.83c82248.pdf",
     "static/media/PD.PNG": "/static/media/PD.84887615.PNG",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.1d7d1311.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.1dd535d7.chunk.js",
-    "static/js/main.ad818acc.chunk.js"
+    "static/js/2.0df76688.chunk.js",
+    "static/js/main.64827143.chunk.js"
   ]
 }
