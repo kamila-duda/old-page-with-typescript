@@ -44,9 +44,9 @@ export const StyledWrapper = styled.div`
       justify-content: space-around;
       z-index: -1;
       @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-        padding-top: 100px;
+        padding-top: 80px;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-around;
       }
     `}
 `;

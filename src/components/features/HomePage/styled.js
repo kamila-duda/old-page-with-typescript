@@ -16,7 +16,7 @@ export const StyledText = styled.h1`
     font-size: 40px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    font-size: 20px;
+    font-size: 24px;
   }
 `;
 export const StyledColoredText = styled.h2`
@@ -40,7 +40,7 @@ export const StyledColoredText = styled.h2`
     font-size: 28px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    font-size: 10px;
+    font-size: 18px;
   }
 `;
 export const StyledImage = styled.img`
@@ -50,11 +50,14 @@ export const StyledImage = styled.img`
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 10px 10px 30px 0px ${({ theme }) => theme.color.primaryColor}24;
-  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
-    width: 80%;
-    height: 80%;
+  @media (max-width: 1025px) {
+    margin-top: 20px;
+    width: 50vw;
+    height: 50vw;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     margin-top: 20px;
+    width: 80vw;
+    height: 80vw;
   }
 `;
