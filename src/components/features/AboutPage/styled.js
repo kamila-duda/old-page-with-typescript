@@ -12,7 +12,7 @@ export const StyledImageWrapper = styled.div`
 export const StyledImage = styled.img`
   width: 100%;
   object-fit: contain;
-  border-radius: 25px;
+  border-radius: 50px;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     display: none;
   }

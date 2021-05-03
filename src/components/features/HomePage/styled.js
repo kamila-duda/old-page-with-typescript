@@ -56,8 +56,15 @@ export const StyledImage = styled.img`
     height: 50vw;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    margin-top: 20px;
+    margin-top: 0px;
+    width: 70vw;
+    height: 70vw;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     width: 80vw;
     height: 80vw;
+  }
+  @media (max-width: 325px) {
+    margin-top: 20px;
   }
 `;

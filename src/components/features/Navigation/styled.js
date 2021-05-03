@@ -67,9 +67,12 @@ export const StyledNavLink = styled.a`
 export const StyledNavItem = styled.li`
   position: relative;
   padding: 15px 30px;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 5px;
   text-align: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
+    font-size: 12px;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 40px;
     font-size: 18px;
