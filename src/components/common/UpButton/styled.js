@@ -26,11 +26,6 @@ export const StyledUpButton = styled.div`
     css`
       display: none;
     `}
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    .KTYnj {
-      font-size: 40px;
-    }
-  }
 `;
 export const StyledText = styled.h3`
   margin: 0;
@@ -38,4 +33,7 @@ export const StyledText = styled.h3`
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 80px;
   font-weight: 600;
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 40px;
+  }
 `;
