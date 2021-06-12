@@ -4,13 +4,13 @@ export const StyledFooter = styled.footer`
   position: relative;
   background-color: ${({ theme }) => theme.color.lighterPrimaryColor};
   width: 100%;
-  margin: -4.5% auto 0;
+  padding: 5px;
   border-radius: 50px 50px 0 0;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     border-radius: 25px 25px 0 0;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    margin: -15% auto 0;
+    margin: -10% auto 0;
   }
 `;
 export const StyledWrapper = styled.div`

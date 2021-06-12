@@ -22,8 +22,8 @@ import SectionTitle from "../../common/SectionTitle";
 
 const ProjectsPage = () => {
   return (
-    <Container backgroundColor={"#FEFEFE"} marginTop={"-5%"}>
-      <SectionTitle sectionTitle={"My projects"} color={"#6423FF"} />
+    <Container backgroundColor="#FEFEFE" marginTop="-5%">
+      <SectionTitle sectionTitle="My projects" color="#6423FF" />
       {projects.map((category) => (
         <StyledArticle key={category.title}>
           <StyledTextContainer>

@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledText = styled.h1`
+export const StyledText = styled(motion.h1)`
   top: 200px;
   left: 300px;
   color: ${({ theme }) => theme.color.fontColor};
@@ -19,7 +20,7 @@ export const StyledText = styled.h1`
     font-size: 24px;
   }
 `;
-export const StyledColoredText = styled.h2`
+export const StyledColoredText = styled(motion.h2)`
   color: ${({ theme }) => theme.color.lightPrimaryColor};
   font-size: 46px;
   margin-bottom: 5px;
@@ -43,7 +44,7 @@ export const StyledColoredText = styled.h2`
     font-size: 18px;
   }
 `;
-export const StyledImage = styled.img`
+export const StyledImage = styled(motion.img)`
   position: relative;
   width: 68vh;
   height: 68vh;

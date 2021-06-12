@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSectionTitle = styled.h2`
-  margin: 5px auto;
+  margin: 15px auto;
   padding-bottom: 10px;
   color: ${({ color }) => color};
   letter-spacing: 3px;

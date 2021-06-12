@@ -10,10 +10,9 @@ const Container = ({
   direction,
 }) => {
   return (
-    <StyledContainer {...{  backgroundColor, marginTop}}
-    >
-      <StyledWrapper {...{ homepage, align, direction }}>
-      {children}
+    <StyledContainer backgroundColor={backgroundColor} marginTop={marginTop}>
+      <StyledWrapper homepage={homepage} align={align} direction={direction}>
+        {children}
       </StyledWrapper>
     </StyledContainer>
   );

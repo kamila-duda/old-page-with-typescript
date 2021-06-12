@@ -13,7 +13,7 @@ import {
   StyledContentItem,
   StyledDecorationItem,
 } from "./styled";
-import me from "./../../../images/me3.jpg";
+import me from "./../../../images/me.png";
 
 const AboutPage = () => {
   const textToShow =
@@ -61,11 +61,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Container
-        backgroundColor={"#25293E"}
-        marginTop={"5%"}
-        align={"flex-start"}
-      >
+      <Container backgroundColor="#25293E" marginTop="5%" align="flex-start">
         <StyledImageWrapper>
           <StyledImage src={me} />
           <CvContainer />

@@ -26,7 +26,6 @@ export const StyledText = styled.p`
   letter-spacing: 2px;
   min-height: 300px;
   left: 0px;
-  text-align: justify;
   color: ${({ theme }) => theme.color.darknestWhite};
   &::after {
     content: "_";
@@ -47,7 +46,7 @@ export const StyledText = styled.p`
     line-height: 2;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0px;
   }
 `;

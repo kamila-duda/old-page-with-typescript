@@ -8,8 +8,8 @@ export const StyledContainer = styled.div`
   margin-top: ${(props) => props.marginTop};
   background: ${(props) => props.backgroundColor};
   padding-bottom: 40px;
+  margin-bottom: -5%;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    padding: 10px;
     border-radius: 25px 25px 0% 0%;
   }
 `;
@@ -26,9 +26,12 @@ export const StyledWrapper = styled.div`
   padding: 80px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
-    padding: 5px;
+    padding: 25px;
     flex-direction: column;
     justify-content: space-around;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    padding: 15px;
   }
   ${({ homepage }) =>
     homepage &&

@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledWrapperIcons = styled.div`
+export const StyledWrapperIcons = styled(motion.div)`
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -20,7 +21,7 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     font-size: 20px;
   }
 `;
-export const StyledIcon = styled.div`
+export const StyledIcon = styled(motion.div)`
   width: 50px;
   height: 50px;
   padding: 5px;

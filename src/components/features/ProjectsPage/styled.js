@@ -11,7 +11,19 @@ export const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
+  max-width: 80%;
+  padding: 45px 0;
+  font-size: 20px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
+    max-width: 100%;
+    font-size: 18px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    font-size: 16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 14px;
+  }
 `;
 export const StyledCategoryTitle = styled.h3`
   color: ${({ theme }) => theme.color.primaryColor};
@@ -119,7 +131,7 @@ export const StyledGithubLink = styled.a`
         ${({ theme }) => theme.color.lightPrimaryColor} 100%
       );
       padding: 20px;
-      margin-bottom: 30px;
+      margin: 30px 0;
       border: 3px solid ${({ theme }) => theme.color.white};
       border-radius: 50px;
       display: block;
@@ -190,7 +202,7 @@ export const StyledDetail = styled.span`
 export const StyledLine = styled.p`
   font-weight: bold;
   text-align: center;
-  margin: 10px auto;
+  margin: 60px auto;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 15px;
   }
