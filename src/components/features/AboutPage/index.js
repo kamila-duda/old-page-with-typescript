@@ -17,7 +17,7 @@ import me from "./../../../images/me.png";
 
 const AboutPage = () => {
   const textToShow =
-    "In 2019, I decided to change my sector to programming. I started learning HTML, CSS, and JavaScript. After learning Bootstrap, my first page was created. Every day I systematically expand my knowledge by reading books, blogs, and attempting online courses. In my portfolio, I have websites, web applications downloading data from API, games, and a group project.";
+    "I decided to change my sector to programming. I started learning HTML, CSS, and JavaScript. After learning Bootstrap, my first page was created. Every day I systematically expand my knowledge by reading books, blogs, and attempting online courses. In my portfolio, I have websites, web applications downloading data from API, games, and a group project.";
   const [textTyping, setTextTyping] = useState("");
   const [count, setCount] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -31,12 +31,12 @@ const AboutPage = () => {
   const onScrollPage = () => {
     if (window.pageYOffset > componentRef.current.offsetTop - 400) {
       setIsScrolling(true);
-      window.removeEventListener("scroll", onScrollPage);
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", onScrollPage);
+    return () => window.removeEventListener("scroll", onScrollPage);
   }, []);
 
   useEffect(() => {
