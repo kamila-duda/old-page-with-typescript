@@ -64,11 +64,11 @@ export const projects = [
       "The Piggy Bank was created to teach children to count money, and the Letter game is intended to introduce people to the layout of the letters on the keyboard. The quiz allows to test knowledge of English.",
     items: [
       {
-        image: money,
-        name: "money game",
-        code: "https://github.com/kamila-duda/coins",
-        link: "https://kamila-duda.github.io/coins/",
-        tags: ["HTML", "CSS", "Sass", "JavaScript"],
+        image: kidsAng,
+        name: "enaglish for kids",
+        code: "https://github.com/kamila-duda/angielski",
+        link: "https://kamila-duda.github.io/angielski/",
+        tags: ["React.js", "StyledComponents", "Redux", "Saga"],
       },
       {
         image: letters,
@@ -85,11 +85,11 @@ export const projects = [
         tags: ["HTML", "CSS", "JavaScript"],
       },
       {
-        image: kidsAng,
-        name: "enaglish for kids",
-        code: "https://github.com/kamila-duda/angielski",
-        link: "https://kamila-duda.github.io/angielski/",
-        tags: ["React.js", "StyledComponents", "Redux", "Saga"],
+        image: money,
+        name: "money game",
+        code: "https://github.com/kamila-duda/coins",
+        link: "https://kamila-duda.github.io/coins/",
+        tags: ["HTML", "CSS", "Sass", "JavaScript"],
       },
     ],
   },
