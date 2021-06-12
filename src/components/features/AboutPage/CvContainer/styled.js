@@ -16,7 +16,7 @@ export const StyledParagraph = styled.p`
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 2px;
   color: white;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {

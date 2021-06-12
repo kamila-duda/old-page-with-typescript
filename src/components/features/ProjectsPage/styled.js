@@ -13,12 +13,11 @@ export const StyledTextContainer = styled.div`
   justify-content: center;
   max-width: 80%;
   padding: 45px 0;
-  font-size: 20px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
-    max-width: 100%;
-    font-size: 18px;
-  }
+  font-size: 18px;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    max-width: 100%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     font-size: 16px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
@@ -28,6 +27,7 @@ export const StyledTextContainer = styled.div`
 export const StyledCategoryTitle = styled.h3`
   color: ${({ theme }) => theme.color.primaryColor};
   text-transform: uppercase;
+  font-size: 16px;
 `;
 export const StyledProjectsContainer = styled.div`
   position: relative;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledLine = styled.p`
   width: 100%;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   color: ${({ theme }) => theme.color.white};
   text-align: center;
 `;
@@ -49,5 +49,6 @@ export const StyledImage = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin: 40px 0;
   object-fit: cover;
 `;

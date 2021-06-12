@@ -76,7 +76,7 @@ export const StyledListItem = styled.li`
   padding-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   border-bottom: 1px solid transparent;
   cursor: pointer;
   &:hover {
@@ -108,6 +108,8 @@ export const StyledListItem = styled.li`
 export const StyledTitle = styled.h3`
   color: ${({ theme }) => theme.color.lighterPrimaryColor};
   letter-spacing: 3px;
+  font-size: 16px;
+  margin: 30px 0 10px;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     font-size: 14px;
   }
@@ -146,7 +148,7 @@ export const StyledContentItem = styled.p`
 `;
 export const StyledDecorationItem = styled.span`
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 5px;
   text-transform: uppercase;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {

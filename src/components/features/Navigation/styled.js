@@ -12,6 +12,10 @@ export const StyledNav = styled.nav`
   top: 0;
   right: 0;
   z-index: 100;
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    background-color: ${({ theme }) => theme.color.white};
+    border-radius: 0 0 25px 25px;
+  }
 `;
 export const StyledIconWrapper = styled.div`
   display: flex;
@@ -41,6 +45,8 @@ export const StyledLink = styled.a`
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     margin: 5px;
+    width: 40px;
+    height: 40px;
   }
 `;
 export const StyledNavList = styled.ul`
@@ -73,6 +79,10 @@ export const StyledNavItem = styled.li`
   @media (max-width: ${({ theme }) => theme.breakpoint.m}) {
     font-size: 12px;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    font-size: 20px;
+    padding: 50px;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 40px;
     font-size: 18px;
@@ -90,33 +100,38 @@ export const StyledIcon = styled.div`
   right: 10px;
   width: 45px;
   height: 45px;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 5px;
   border: 1px solid ${({ theme }) => theme.color.primaryColor};
   border-radius: 50px;
   background-color: ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.primaryColor};
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 export const StyledNavListMobile = styled.ul`
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  width: 100%;
-  margin: -400px 0 0px;
-  ${({ open }) =>
-    open &&
-    css`
-      margin: 0;
-      background-color: ${({ theme }) => theme.color.white};
-      ${StyledIcon} {
-        border: 1px solid ${({ theme }) => theme.color.primaryColor};
-        color: ${({ theme }) => theme.color.primaryColor};
-      }
-    `}
-  @media (min-width: ${({ theme }) => theme.breakpoint.another}) {
-    display: none;
+  display: none;
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    margin: -400px 0 0px;
+    ${({ open }) =>
+      open &&
+      css`
+        margin: 0;
+        background-color: ${({ theme }) => theme.color.white};
+        ${StyledIcon} {
+          border: 1px solid ${({ theme }) => theme.color.primaryColor};
+          color: ${({ theme }) => theme.color.primaryColor};
+        }
+      `}
   }
 `;

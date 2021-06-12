@@ -12,7 +12,7 @@ export const theme = {
   breakpoint: {
     extraSmall: "350px",
     xs: "420px",
-    another: "650px",
+    another: "768px",
     s: "991px",
     m: "1300px",
   },
