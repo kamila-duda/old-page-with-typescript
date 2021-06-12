@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.1c117910.chunk.js",
-    "main.js.map": "/static/js/main.1c117910.chunk.js.map",
+    "main.js": "/static/js/main.319aed36.chunk.js",
+    "main.js.map": "/static/js/main.319aed36.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d7d1311.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d7d1311.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.0df76688.chunk.js": "/static/js/2.0df76688.chunk.js",
-    "static/js/2.0df76688.chunk.js.map": "/static/js/2.0df76688.chunk.js.map",
+    "static/js/2.5e0c101d.chunk.js": "/static/js/2.5e0c101d.chunk.js",
+    "static/js/2.5e0c101d.chunk.js.map": "/static/js/2.5e0c101d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.414950930007c6e615616a3f352dd1c4.js": "/precache-manifest.414950930007c6e615616a3f352dd1c4.js",
+    "precache-manifest.851922efb86d2dd4ba4519a4e28b7629.js": "/precache-manifest.851922efb86d2dd4ba4519a4e28b7629.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/js/2.0df76688.chunk.js.LICENSE.txt": "/static/js/2.0df76688.chunk.js.LICENSE.txt",
+    "static/js/2.5e0c101d.chunk.js.LICENSE.txt": "/static/js/2.5e0c101d.chunk.js.LICENSE.txt",
     "static/media/Kamila Duda_CV_ANG.pdf": "/static/media/Kamila Duda_CV_ANG.93ca1856.pdf",
     "static/media/Kamila Duda_CV_PL.pdf": "/static/media/Kamila Duda_CV_PL.83c82248.pdf",
     "static/media/PD.PNG": "/static/media/PD.3924a2ee.PNG",
@@ -25,8 +25,8 @@
     "static/media/hairdresser.PNG": "/static/media/hairdresser.804e5db9.PNG",
     "static/media/lansoft.PNG": "/static/media/lansoft.7b410863.PNG",
     "static/media/letterts.PNG": "/static/media/letterts.494485a6.PNG",
+    "static/media/me.png": "/static/media/me.05748f8c.png",
     "static/media/me.jpg": "/static/media/me.49b86366.jpg",
-    "static/media/me3.jpg": "/static/media/me3.f0fcd2be.jpg",
     "static/media/money.PNG": "/static/media/money.d43d1a33.PNG",
     "static/media/movies.PNG": "/static/media/movies.755f6b23.PNG",
     "static/media/starWars.PNG": "/static/media/starWars.bcbbe9ba.PNG",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.1d7d1311.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.0df76688.chunk.js",
-    "static/js/main.1c117910.chunk.js"
+    "static/js/2.5e0c101d.chunk.js",
+    "static/js/main.319aed36.chunk.js"
   ]
 }
