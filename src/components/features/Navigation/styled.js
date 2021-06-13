@@ -97,7 +97,7 @@ export const StyledNavItem = styled.li`
 export const StyledIcon = styled.div`
   position: absolute;
   top: 0px;
-  right: 10px;
+  right: 0px;
   width: 45px;
   height: 45px;
   display: flex;
@@ -123,6 +123,7 @@ export const StyledNavListMobile = styled.ul`
     padding: 0;
     width: 100%;
     margin: -400px 0 0px;
+    border-radius: 0 0 25px 25px;
     ${({ open }) =>
       open &&
       css`
