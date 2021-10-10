@@ -8,9 +8,10 @@ const Container = ({
   marginTop,
   align,
   direction,
+  marginBottom
 }) => {
   return (
-    <StyledContainer backgroundColor={backgroundColor} marginTop={marginTop}>
+    <StyledContainer backgroundColor={backgroundColor} marginTop={marginTop} marginBottom={marginBottom}>
       <StyledWrapper homepage={homepage} align={align} direction={direction}>
         {children}
       </StyledWrapper>

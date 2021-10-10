@@ -7,11 +7,12 @@ export const StyledLine = styled.p`
   color: ${({ theme }) => theme.color.white};
   text-align: center;
 `;
+
 export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px;
+  margin: 50px 50px 0px;
 `;
 export const StyledLink = styled.a`
   font-size: 36px;

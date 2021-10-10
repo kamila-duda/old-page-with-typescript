@@ -9,7 +9,12 @@ import profile from "../../../images/me.jpg";
 
 const ContactPage = () => {
   return (
-    <Container backgroundColor="#25293E" marginTop="-5%" direction="column">
+    <Container
+      backgroundColor="#25293E"
+      marginTop="-5%"
+      marginBottom="0%"
+      direction="column"
+    >
       <SectionTitle sectionTitle="Contact" color="#FFFFFF" />
       <StyledImage src={profile} />
       <StyledLine>

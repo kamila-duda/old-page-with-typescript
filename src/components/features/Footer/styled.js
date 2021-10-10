@@ -5,7 +5,6 @@ export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.color.lighterPrimaryColor};
   width: 100%;
   padding: 20px 40px;
-  border-radius: 50px 50px 0 0;
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     border-radius: 25px 25px 0 0;
     padding: 10px 20px;

@@ -8,7 +8,7 @@ export const StyledContainer = styled.div`
   margin-top: ${(props) => props.marginTop};
   background: ${(props) => props.backgroundColor};
   padding-bottom: 40px;
-  margin-bottom: -5%;
+  margin-bottom: ${(props) => props.marginBottom ?? "-5%"};
   @media (max-width: ${({ theme }) => theme.breakpoint.s}) {
     border-radius: 25px 25px 0% 0%;
   }

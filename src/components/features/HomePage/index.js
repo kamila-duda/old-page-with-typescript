@@ -9,29 +9,33 @@ const HomePage = () => {
     <Container homepage={true}>
       <div>
         <StyledColoredText
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
+            y: 0,
           }}
           transition={{
-            opacity: { duration: 1, delay: 0.5 },
+            duration: 0.8,
+            delay: 0.5,
           }}
         >
           Hello world!
         </StyledColoredText>
         <StyledText
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
+            y: 0,
           }}
           transition={{
-            opacity: { duration: 2, delay: 1 },
+            duration: 0.8,
+            delay: 1.1,
           }}
         >
           I am Kamila <br />
           a passionate
           <br />
-          Frontend Developer
+          Front-End Developer
         </StyledText>
         <IconsContainer />
       </div>
@@ -41,7 +45,7 @@ const HomePage = () => {
         animate={{
           scale: [0, 1],
         }}
-        transition={{ duration: 3, delay: 1.5 }}
+        transition={{ duration: 2, delay: 1.5 }}
       />
     </Container>
   );

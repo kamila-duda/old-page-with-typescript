@@ -20,8 +20,8 @@ const container = {
     opacity: 1,
     scale: 1,
     transition: {
-      delayChildren: 4,
-      staggerChildren: 0.5,
+      delayChildren: 3,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -31,6 +31,10 @@ const item = {
   visible: {
     y: 0,
     opacity: 1,
+  },
+  transition: {
+    type: "spring",
+    stiffness: 20,
   },
 };
 
