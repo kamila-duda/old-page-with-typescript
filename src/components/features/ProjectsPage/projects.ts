@@ -1,19 +1,33 @@
-import ang from "./../../../images/ang.PNG";
-import astronomy from "./../../../images/astronomy.PNG";
-import cantor from "./../../../images/cantor.PNG";
-import diet from "./../../../images/diet.PNG";
-import lansoft from "./../../../images/lansoft.PNG";
-import letters from "./../../../images/letterts.PNG";
-import money from "./../../../images/money.PNG";
-import todo from "./../../../images/todo.PNG";
-import kissi from "./../../../images/PD.PNG";
-import budo from "./../../../images/budo.PNG";
-import movies from "./../../../images/movies.PNG";
-import kidsAng from "./../../../images/angA.png";
-import hair from "./../../../images/hairdresser.PNG";
-import todoVue from "./../../../images/todoVue.PNG";
-import starWars from "./../../../images/starWars.PNG";
-import artN from "./../../../images/artN.PNG";
+import ang from "assets/images/ang.png";
+import astronomy from "assets/images/astronomy.png";
+import cantor from "assets/images/cantor.png";
+import diet from "assets/images/diet.png";
+import lansoft from "assets/images/lansoft.png";
+import letters from "assets/images/letterts.png";
+import money from "assets/images/money.png";
+import todo from "assets/images/todo.png";
+import kissi from "assets/images/pd.png";
+import budo from "assets/images/budo.png";
+import movies from "assets/images/movies.png";
+import kidsAng from "assets/images/angA.png";
+import hair from "assets/images/hairdresser.png";
+import todoVue from "assets/images/todoVue.png";
+import starWars from "assets/images/starWars.png";
+import artN from "assets/images/artN.png";
+
+export type ItemsType = {
+  image: string;
+  name: string;
+  code?: string;
+  link: string;
+  tags: string[];
+};
+
+export interface ProjectTypes {
+  title: string;
+  description: string;
+  items: ItemsType[];
+}
 
 export const projects = [
   {

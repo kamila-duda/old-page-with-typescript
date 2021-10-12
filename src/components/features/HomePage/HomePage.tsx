@@ -1,10 +1,10 @@
 import React from "react";
-import profile from "../../../images/me.jpg";
-import { StyledImage, StyledText, StyledColoredText } from "./styled";
-import Container from "../../common/Container";
-import IconsContainer from "./IconsContainer";
+import profile from "assets/images/me.jpg";
+import { StyledImage, StyledText, StyledColoredText } from "./HomePage.styled";
+import { Container } from "components/common/Container/Container";
+import { IconsContainer } from "./IconsContainer/IconsContainer";
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <Container homepage={true}>
       <div>
@@ -50,5 +50,3 @@ const HomePage = () => {
     </Container>
   );
 };
-
-export default HomePage;

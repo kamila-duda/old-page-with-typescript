@@ -7,6 +7,7 @@ export const StyledArticle = styled.article`
   flex-wrap: wrap;
   margin-bottom: 20px;
 `;
+
 export const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,11 +25,13 @@ export const StyledTextContainer = styled.div`
     font-size: 14px;
   }
 `;
+
 export const StyledCategoryTitle = styled.h3`
   color: ${({ theme }) => theme.color.primaryColor};
   text-transform: uppercase;
   font-size: 16px;
 `;
+
 export const StyledProjectsContainer = styled.div`
   position: relative;
   display: grid;
@@ -43,6 +46,7 @@ export const StyledProjectsContainer = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
+
 export const StyledDetailsContainer = styled.p`
   position: absolute;
   display: none;
@@ -60,6 +64,7 @@ export const StyledDetailsContainer = styled.p`
   text-transform: uppercase;
   cursor: pointer;
 `;
+
 export const StyledCard = styled.div`
   position: relative;
   width: 100%;
@@ -74,41 +79,43 @@ export const StyledCard = styled.div`
     }
   }
 `;
-export const StyledCardImage = styled.div`
-  position: relative;
-  height: 200px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: ${({ theme }) => theme.color.white};
-  text-transform: uppercase;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 30%);
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-radius: 12px;
-    ${({ image }) =>
-      image &&
+
+export const StyledCardImage = styled.div<{ image: string }>(
+  ({ image, theme: { color, breakpoint } }) => css`
+    position: relative;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: ${color.white};
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 30%);
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border-radius: 12px;
+      ${image &&
       css`
         background-image: url(${image});
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       `}
-  }
+    }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    font-size: 13px;
-  }
-`;
+    @media (max-width: ${breakpoint.xs}) {
+      font-size: 13px;
+    }
+  `
+);
 
 export const StyledImage = styled.img`
   display: block;
@@ -116,33 +123,36 @@ export const StyledImage = styled.img`
   object-fit: contain;
   border-radius: 50px;
 `;
-export const StyledGithubLink = styled.a`
-  margin: 5px 15px;
-  text-decoration: none;
-  transition: transform 1s;
-  color: ${({ theme }) => theme.color.white};
-  position: relative;
-  ${({ github }) =>
-    github &&
+
+export const StyledGithubLink = styled.a<{ github?: boolean }>(
+  ({ github, theme: { color, breakpoint } }) => css`
+    margin: 5px 15px;
+    text-decoration: none;
+    transition: transform 1s;
+    color: ${color.white};
+    position: relative;
+    ${github &&
     css`
       background: linear-gradient(
         330deg,
-        ${({ theme }) => theme.color.primaryColor} 40%,
-        ${({ theme }) => theme.color.lightPrimaryColor} 100%
+        ${color.primaryColor} 40%,
+        ${color.lightPrimaryColor} 100%
       );
       padding: 20px;
       margin: 30px 0;
-      border: 3px solid ${({ theme }) => theme.color.white};
+      border: 3px solid ${color.white};
       border-radius: 50px;
       display: block;
       &:hover {
-        background: ${({ theme }) => theme.color.primaryColor};
+        background: ${color.primaryColor};
       }
     `}
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    font-size: 15px;
-  }
-`;
+    @media (max-width: ${breakpoint.xs}) {
+      font-size: 15px;
+    }
+  `
+);
+
 export const StyledLink = styled(StyledGithubLink)`
   width: 100px;
   height: 100px;
@@ -162,6 +172,7 @@ export const StyledLink = styled(StyledGithubLink)`
     transform: scale(1.2);
   }
 `;
+
 export const StyledTagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +180,7 @@ export const StyledTagContainer = styled.div`
   justify-content: center;
   padding: 10px;
 `;
+
 export const StyledDetail = styled.span`
   position: relative;
   font-size: 14px;
@@ -199,6 +211,7 @@ export const StyledDetail = styled.span`
     }
   }
 `;
+
 export const StyledLine = styled.p`
   font-weight: bold;
   text-align: center;
@@ -207,6 +220,7 @@ export const StyledLine = styled.p`
     font-size: 15px;
   }
 `;
+
 export const StyledName = styled.h4`
   text-transform: capitalize;
 `;

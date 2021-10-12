@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faSearch } from "@fortawesome/free-solid-svg-icons";
-import Container from "../../common/Container";
+import { Container } from "components/common/Container/Container";
 import {
   StyledCardImage,
   StyledCategoryTitle,
@@ -16,11 +16,11 @@ import {
   StyledTagContainer,
   StyledName,
   StyledDetailsContainer,
-} from "./styled";
+} from "./ProjectsPage.styled";
 import { projects } from "./projects";
-import SectionTitle from "../../common/SectionTitle";
+import { SectionTitle } from "components/common/SectionTitle/SectionTitle";
 
-const ProjectsPage = () => {
+export const ProjectsPage = () => {
   return (
     <Container backgroundColor="#FEFEFE" marginTop="-5%">
       <SectionTitle sectionTitle="My projects" color="#6423FF" />
@@ -72,5 +72,3 @@ const ProjectsPage = () => {
     </Container>
   );
 };
-
-export default ProjectsPage;

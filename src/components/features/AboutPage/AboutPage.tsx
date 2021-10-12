@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import Container from "../../common/Container";
-import CvContainer from "./CvContainer";
+import { Container } from "components/common/Container/Container";
+import { CvContainer } from "./CvContainer/CvContainer";
 import {
   StyledListItem,
   StyledImageWrapper,
@@ -12,25 +12,28 @@ import {
   StyledContent,
   StyledContentItem,
   StyledDecorationItem,
-} from "./styled";
-import me from "./../../../images/me.png";
+} from "./AboutPage.styled";
+import me from "assets/images/me.png";
 
-const AboutPage = () => {
+export const AboutPage = () => {
   const textToShow =
     "I decided to change my sector to programming. I started learning HTML, CSS, and JavaScript. After learning Bootstrap, my first page was created. Every day I systematically expand my knowledge by reading books, blogs, and attempting online courses. In my portfolio, I have websites, web applications downloading data from API, games, and a group project.";
   const [textTyping, setTextTyping] = useState("");
   const [count, setCount] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const componentRef = useRef(null);
-  const divRef = useRef(null);
-  const [divHeight, setDivHeight] = useState();
+  const componentRef = useRef<HTMLDivElement>(null);
+  const divRef = useRef<HTMLDivElement>(null);
+  const [divHeight, setDivHeight] = useState(0);
   useEffect(() => {
-    setDivHeight(divRef.current.getBoundingClientRect().height + 80);
+    if (divRef.current)
+      setDivHeight(divRef.current.getBoundingClientRect().height + 80);
   }, [divRef]);
 
   const onScrollPage = () => {
-    if (window.pageYOffset > componentRef.current.offsetTop - 400) {
-      setIsScrolling(true);
+    if (componentRef.current) {
+      if (window.pageYOffset > componentRef.current.offsetTop - 400) {
+        setIsScrolling(true);
+      }
     }
   };
 
@@ -55,7 +58,7 @@ const AboutPage = () => {
   }, [count, isScrolling]);
 
   const [activeTab, setActiveTab] = useState("skills");
-  const setTab = (name) => {
+  const setTab = (name: string) => {
     setActiveTab(name);
   };
 
@@ -167,5 +170,3 @@ const AboutPage = () => {
     </>
   );
 };
-
-export default AboutPage;

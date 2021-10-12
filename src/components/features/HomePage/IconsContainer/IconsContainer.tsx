@@ -1,9 +1,10 @@
 import React from "react";
+import { Variants } from "framer-motion";
 import {
   StyledWrapperIcons,
   StyledFontAwesomeIcon,
   StyledIcon,
-} from "./styled";
+} from "./IconsContainer.styled";
 import {
   faHtml5,
   faCss3Alt,
@@ -14,7 +15,7 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
-const container = {
+const container = (): Variants => ({
   hidden: { opacity: 1, scale: 0 },
   visible: {
     opacity: 1,
@@ -24,21 +25,21 @@ const container = {
       staggerChildren: 0.2,
     },
   },
-};
+});
 
-const item = {
+const item = (): Variants => ({
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+    },
   },
-  transition: {
-    type: "spring",
-    stiffness: 20,
-  },
-};
+});
 
-const IconsContainer = () => {
+export const IconsContainer = () => {
   const icons = [
     faHtml5,
     faCss3Alt,
@@ -50,14 +51,21 @@ const IconsContainer = () => {
   ];
 
   return (
-    <StyledWrapperIcons variants={container} initial="hidden" animate="visible">
+    <StyledWrapperIcons
+      variants={container()}
+      initial="hidden"
+      animate="visible"
+    >
       {icons.map((icon) => (
-        <StyledIcon key={icon.iconName} variants={item}>
+        <StyledIcon
+          key={icon.iconName}
+          variants={item()}
+          initial="hidden"
+          animate="visible"
+        >
           <StyledFontAwesomeIcon icon={icon} />
         </StyledIcon>
       ))}
     </StyledWrapperIcons>
   );
 };
-
-export default IconsContainer;
