@@ -1,18 +1,13 @@
 import React from "react";
-import { Container } from "components/common/Container/Container";
-import {
-  StyledLine,
-  StyledContainer,
-  StyledLink,
-  StyledImage,
-} from "./ContactPage.styled";
+import Container from "../../common/Container";
+import { StyledLine, StyledContainer, StyledLink, StyledImage } from "./styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { SectionTitle } from "components/common/SectionTitle/SectionTitle";
-import profile from "assets/images/me.jpg";
+import SectionTitle from "../../common/SectionTitle";
+import profile from "../../../images/me.jpg";
 
-export const ContactPage = () => {
+const ContactPage = () => {
   return (
     <Container
       backgroundColor="#25293E"
@@ -43,3 +38,5 @@ export const ContactPage = () => {
     </Container>
   );
 };
+
+export default ContactPage;

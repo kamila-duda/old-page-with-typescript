@@ -63,14 +63,13 @@ export const StyledNavList = styled.ul`
     display: none;
   }
 `;
-export const StyledNavLink = styled.a<{selected?: boolean}>(({selected, theme: {color}})=> css`
+export const StyledNavLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
-  color: ${color.primaryColor};
+  color: ${({ theme }) => theme.color.primaryColor};
   position: relative;
-`);
-
+`;
 export const StyledNavItem = styled.li`
   position: relative;
   padding: 15px 30px;
@@ -114,9 +113,9 @@ export const StyledIcon = styled.div`
     height: 40px;
   }
 `;
-export const StyledNavListMobile = styled.ul<{open: boolean}>(({open, theme: {breakpoint, color}})=> css`
+export const StyledNavListMobile = styled.ul`
   display: none;
-  @media (max-width: ${breakpoint.another}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.another}) {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -125,14 +124,15 @@ export const StyledNavListMobile = styled.ul<{open: boolean}>(({open, theme: {br
     width: 100%;
     margin: -400px 0 0px;
     border-radius: 0 0 25px 25px;
-    ${open &&
+    ${({ open }) =>
+      open &&
       css`
         margin: 0;
-        background-color: ${color.white};
+        background-color: ${({ theme }) => theme.color.white};
         ${StyledIcon} {
-          border: 1px solid ${color.primaryColor};
-          color: ${color.primaryColor};
+          border: 1px solid ${({ theme }) => theme.color.primaryColor};
+          color: ${({ theme }) => theme.color.primaryColor};
         }
       `}
   }
-`);
+`;

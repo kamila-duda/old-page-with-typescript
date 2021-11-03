@@ -71,41 +71,40 @@ export const StyledList = styled.ul`
     height: 40px;
   }
 `;
-export const StyledListItem = styled.li<{ isActive?: boolean }>(
-  ({ isActive, theme: { color, breakpoint } }) => css`
-    width: 33%;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 18px;
-    border-bottom: 1px solid transparent;
-    cursor: pointer;
-    &:hover {
-      border-bottom: 1px solid ${color.darknestWhite};
-    }
-
-    ${isActive &&
+export const StyledListItem = styled.li`
+  width: 33%;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 1px solid ${({ theme }) => theme.color.darknestWhite};
+  }
+  ${({ isActive }) =>
+    isActive &&
     css`
-      border-bottom: 1px solid ${color.lightPrimaryColor};
+      border-bottom: 1px solid ${({ theme }) => theme.color.lightPrimaryColor};
     `}
-    @media (max-width: ${breakpoint.xs}) {
-      font-size: 14px;
-      padding: 10px;
-      background-color: ${color.lighterPrimaryColor};
-      border-radius: 25px 25px 0 0;
-      &:hover {
-        border-bottom: 1px solid transparent;
-      }
-      ${isActive &&
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    font-size: 14px;
+    padding: 10px;
+    background-color: ${({ theme }) => theme.color.lighterPrimaryColor};
+    border-radius: 25px 25px 0 0;
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+    ${({ isActive }) =>
+      isActive &&
       css`
-        background-color: ${color.primaryColor};
+        background-color: ${({ theme }) => theme.color.primaryColor};
         &:hover {
           border-bottom: 1px solid transparent;
         }
       `}
-    }
-  `
-);
+  }
+`;
 export const StyledTitle = styled.h3`
   color: ${({ theme }) => theme.color.lighterPrimaryColor};
   letter-spacing: 3px;
@@ -115,15 +114,12 @@ export const StyledTitle = styled.h3`
     font-size: 14px;
   }
 `;
-export const StyledContent = styled.div<{
-  height: number;
-  isActive?: boolean;
-}>(
-  ({ height, isActive, theme: { breakpoint } }) => css`
-    height: ${height}px;
-    padding: 10px;
-    display: none;
-    ${isActive &&
+export const StyledContent = styled.div`
+  height: ${({ height }) => height}px;
+  padding: 10px;
+  display: none;
+  ${({ isActive }) =>
+    isActive &&
     css`
       display: block;
       animation: fadeEffect 1s;
@@ -136,11 +132,10 @@ export const StyledContent = styled.div<{
         }
       }
     `}
-    @media (max-width: ${breakpoint.xs}) {
-      padding: 20px 10px;
-    }
-  `
-);
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    padding: 20px 10px;
+  }
+`;
 export const StyledContentItem = styled.p`
   margin: 5px 0;
   font-size: 16px;

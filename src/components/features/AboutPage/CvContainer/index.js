@@ -4,25 +4,25 @@ import {
   StyledLink,
   StyledFontAwesomeIcon,
   StyledParagraph,
-} from "./CvContainer.styled";
+} from "./styled";
+import CV from "./../../../../files/Kamila Duda_CV_PL.pdf";
+import CVang from "./../../../../files/Kamila Duda_CV_ANG.pdf";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
-export const CvContainer = () => {
+const CvContainer = () => {
   return (
     <StyledContainer>
       <StyledParagraph>Feel free to download my CV</StyledParagraph>
-      <StyledLink
-        href="assets/files/Kamila Duda_CV_ANG.pdf"
-        download
-        diffrentColor
-      >
+      <StyledLink href={CVang} download diffrentColor={true}>
         English CV
         <StyledFontAwesomeIcon icon={faFilePdf} />
       </StyledLink>
-      <StyledLink href="assets/files/Kamila Duda_CV_PL.pdf" download>
+      <StyledLink href={CV} download>
         Polish CV
         <StyledFontAwesomeIcon icon={faFilePdf} />
       </StyledLink>
     </StyledContainer>
   );
 };
+
+export default CvContainer;
